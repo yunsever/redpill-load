@@ -12,7 +12,7 @@ readonly ASCII_BG_RED="\e[1;41m"
 readonly ASCII_BG_GREEN="\e[1;42m"
 
 # shellcheck disable=SC2046
-if [ $(tput colors || exit 1) -gt 0 ]; then
+if [[ $([[ -n "$TERM" ]] && tput colors || exit 1) -gt 0 ]]; then
     readonly ASCII_HAS_COLORS=1
 else
     readonly ASCII_HAS_COLORS=0
@@ -32,7 +32,7 @@ pr_print()
   if [ $ASCII_HAS_COLORS -eq 1 ]; then
     printf "${1}${2}${ASCII_RESET}\n" "${@:3}" >&2
   else
-    printf "${2}" "${@:3}" >&2
+    printf "${2}\n" "${@:3}" >&2
   fi
 }
 

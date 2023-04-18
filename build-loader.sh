@@ -12,7 +12,9 @@ cd "${BASH_SOURCE%/*}/" || exit 1
 ########################################################################################################################
 
 ##### CONFIGURATION YOU CAN OVERRIDE USING ENVIRONMENT #################################################################
+BRP_JUN_MOD=${BRP_JUN_MOD:-0} # whether you want to use jun's mod
 BRP_DEBUG=${BRP_DEBUG:-0} # whether you want to see debug messages
+BRP_PLATFORM_KERNELVERSION=${BRP_PLATFORM_KERNELVERSION:-"XXXXXXXX"} # platform + kernel version
 BRP_CACHE_DIR=${BRP_CACHE_DIR:-"$PWD/cache"} # cache directory where stuff is downloaded & unpacked
 BRP_USER_CFG=${BRP_USER_CFG:-"$PWD/user_config.json"}
 BRP_BUILD_DIR=${BRP_BUILD_DIR:-''} # makes sure attempts are unique; do not override this unless you're using repack
@@ -116,7 +118,7 @@ RPT_BUILD_EXTS='' # by default it's empty == all
 RPT_USER_EXTS=''
 if [[ "${BRP_DEV_DISABLE_EXTS}" -ne 1 ]]; then
   RPT_USER_EXTS=$(rpt_load_user_extensions "${BRP_USER_CFG}") || exit 1
-  rpt_load_bundled_extensions "${RPT_BUNDLED_EXTS_CFG}" RPT_BUNDLED_EXTS_IDS RPT_BUNDLED_EXTS
+  [ -e "${RPT_BUNDLED_EXTS_CFG}" ] && rpt_load_bundled_extensions "${RPT_BUNDLED_EXTS_CFG}" RPT_BUNDLED_EXTS_IDS RPT_BUNDLED_EXTS
   if [[ ! -z "${RPT_USER_EXTS}" ]]; then # if user defined some extensions we need to whitelist bundled + user picked
     for ext_id in ${RPT_BUNDLED_EXTS_IDS[@]+"${RPT_BUNDLED_EXTS_IDS[@]}"}; do
       if [[ ! -z "${RPT_BUILD_EXTS}" ]]; then
@@ -214,42 +216,47 @@ fi
 # Prepare Linux kernel image
 readonly BRP_ZLINUX_FILE=${BRP_UPAT_DIR}/$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" 'files.zlinux.name')
 readonly BRP_ZLINUX_PATCHED_FILE="${BRP_BUILD_DIR}/zImage-patched"
-if [ ! -f "${BRP_ZLINUX_PATCHED_FILE}" ]; then
-  # Using repack method to patch the kernel. This method assumes that it will be interrupted, someone will go and look
-  # at the unpacked file, patch it manually and re-run the process to continue packing
-  if [ "${BRP_LINUX_PATCH_METHOD}" == "repack" ]; then
-    readonly BRP_VMLINUX_FILE="${BRP_BUILD_DIR}/vmlinux.elf"
-
-    if [ ! -f "${BRP_VMLINUX_FILE}" ]; then
-      brp_unpack_zimage "${BRP_ZLINUX_FILE}" "${BRP_VMLINUX_FILE}"
-    else
-      pr_info "Found unpacked vmlinux at \"%s\" - skipping unpacking" "${BRP_VMLINUX_FILE}"
-    fi
-    brp_verify_file_sha256 "${BRP_VMLINUX_FILE}" "$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" "files.vmlinux.sha256")"
-
-    readonly BRP_VMLINUX_PATCHED_FILE="${BRP_BUILD_DIR}/vmlinux-patched.elf"
-    if [ ! -f "${BRP_VMLINUX_PATCHED_FILE}" ]; then
-      pr_err "Patched unpacked Linux file \"%s\" doesn't exist. Create it based on \"%s\" and run the process again" \
-             "${BRP_VMLINUX_PATCHED_FILE}" "${BRP_VMLINUX_FILE}"
-      pr_warn "If you don't know what to do you picked A WRONG METHOD - read the README again. The method you used is for developers only!"
-      exit 1
-    else
-      pr_info "Found patched Linux kernel at \"%s\" - repacking" "${BRP_VMLINUX_PATCHED_FILE}"
-      brp_repack_zimage "${BRP_LINUX_SRC}" "${BRP_VMLINUX_PATCHED_FILE}" "${BRP_ZLINUX_PATCHED_FILE}"
-    fi
-
-  else # we can just "else" for "direct" creation method since it should be checked at the top
-    brp_verify_file_sha256 "${BRP_ZLINUX_FILE}" "$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" "files.zlinux.sha256")"
-    brp_apply_binary_patches \
-      "${BRP_ZLINUX_FILE}" \
-      "${BRP_ZLINUX_PATCHED_FILE}" \
-      "$(brp_json_get_array_values "${BRP_REL_CONFIG_JSON}" 'patches.zlinux')" \
-      "${BRP_REL_CONFIG_BASE}"
-  fi
-else
-  pr_info "Found patched zImage at \"%s\" - skipping patching & repacking" "${BRP_ZLINUX_PATCHED_FILE}"
-fi
-
+# if [ ! -f "${BRP_ZLINUX_PATCHED_FILE}" ]; then
+#   # Using repack method to patch the kernel. This method assumes that it will be interrupted, someone will go and look
+#   # at the unpacked file, patch it manually and re-run the process to continue packing
+#   if [ "${BRP_LINUX_PATCH_METHOD}" == "repack" ]; then
+#     readonly BRP_VMLINUX_FILE="${BRP_BUILD_DIR}/vmlinux.elf"
+# 
+#     if [ ! -f "${BRP_VMLINUX_FILE}" ]; then
+#       brp_unpack_zimage "${BRP_ZLINUX_FILE}" "${BRP_VMLINUX_FILE}"
+#     else
+#       pr_info "Found unpacked vmlinux at \"%s\" - skipping unpacking" "${BRP_VMLINUX_FILE}"
+#     fi
+#     brp_verify_file_sha256 "${BRP_VMLINUX_FILE}" "$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" "files.vmlinux.sha256")"
+# 
+#     readonly BRP_VMLINUX_PATCHED_FILE="${BRP_BUILD_DIR}/vmlinux-patched.elf"
+#     if [ ! -f "${BRP_VMLINUX_PATCHED_FILE}" ]; then
+#       pr_err "Patched unpacked Linux file \"%s\" doesn't exist. Create it based on \"%s\" and run the process again" \
+#              "${BRP_VMLINUX_PATCHED_FILE}" "${BRP_VMLINUX_FILE}"
+#       pr_warn "If you don't know what to do you picked A WRONG METHOD - read the README again. The method you used is for developers only!"
+#       exit 1
+#     else
+#       pr_info "Found patched Linux kernel at \"%s\" - repacking" "${BRP_VMLINUX_PATCHED_FILE}"
+#       brp_repack_zimage "${BRP_LINUX_SRC}" "${BRP_VMLINUX_PATCHED_FILE}" "${BRP_ZLINUX_PATCHED_FILE}"
+#     fi
+# 
+#   else # we can just "else" for "direct" creation method since it should be checked at the top
+#     brp_verify_file_sha256 "${BRP_ZLINUX_FILE}" "$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" "files.zlinux.sha256")"
+#     brp_apply_binary_patches \
+#       "${BRP_ZLINUX_FILE}" \
+#       "${BRP_ZLINUX_PATCHED_FILE}" \
+#       "$(brp_json_get_array_values "${BRP_REL_CONFIG_JSON}" 'patches.zlinux')" \
+#       "${BRP_REL_CONFIG_BASE}"
+#   fi
+# else
+#   pr_info "Found patched zImage at \"%s\" - skipping patching & repacking" "${BRP_ZLINUX_PATCHED_FILE}"
+# fi
+pr_info "Found patched zImage at \"%s\" - skipping patching & repacking" "${BRP_ZLINUX_PATCHED_FILE}"
+chmod -R a+x $PWD/buildroot/board/syno/rootfs-overlay/root
+$PWD/buildroot/board/syno/rootfs-overlay/root/bzImage-to-vmlinux.sh "${BRP_ZLINUX_FILE}" "${BRP_CACHE_DIR}/vmlinux"
+$PWD/buildroot/board/syno/rootfs-overlay/root/kpatch "${BRP_CACHE_DIR}/vmlinux" "${BRP_CACHE_DIR}/vmlinux-mod"
+$PWD/buildroot/board/syno/rootfs-overlay/root/vmlinux-to-bzImage.sh "${BRP_CACHE_DIR}/vmlinux-mod" "${BRP_ZLINUX_PATCHED_FILE}"
+rm -f "${BRP_CACHE_DIR}/vmlinux" "${BRP_CACHE_DIR}/vmlinux-mod"
 
 ##### RAMDISK MODIFICATIONS ############################################################################################
 # here we have a ready kernel in BRP_ZLINUX_PATCHED_FILE which makes the end of playing with the kernel
@@ -257,6 +264,7 @@ fi
 readonly BRP_RD_FILE=${BRP_UPAT_DIR}/$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" 'files.ramdisk.name') # original ramdisk file
 readonly BRP_URD_DIR="${BRP_BUILD_DIR}/rd-${BRP_REL_OS_ID}-unpacked" # folder with unpacked ramdisk contents
 readonly BRP_RD_REPACK="${BRP_BUILD_DIR}/rd-patched-${BRP_REL_OS_ID}.gz" # repacked ramdisk file
+readonly BRP_JUN_PATCH="${BRP_USER_DIR}/jun.patch" # jun.patch
 
 #rm -rf build/testing/rd-* # for debugging ramdisk routines; also comment-out rm of BRP_URD_DIR
 #rm "${BRP_RD_REPACK}" # for testing
@@ -270,6 +278,17 @@ if [ ! -f "${BRP_RD_REPACK}" ]; then # do we even need to unpack-modify-repack t
     brp_unpack_zrd "${BRP_RD_FILE}" "${BRP_URD_DIR}"
   else
     pr_info "Found unpacked ramdisk at \"%s\" - skipping unpacking" "${BRP_URD_DIR}"
+  fi
+
+  if [ "${BRP_JUN_MOD}" -eq 1 ]; then
+    pushd ${BRP_URD_DIR}
+    git init
+    git config user.name "Mona Lisa"
+    git config user.email "email@example.com"
+    git add -A
+    git commit -m "import ramdisk"
+    git tag baseline
+    popd
   fi
 
   # Applies all static .patch files to the ramdisk
@@ -317,16 +336,30 @@ if [ ! -f "${BRP_RD_REPACK}" ]; then # do we even need to unpack-modify-repack t
         || pr_crit "Failed to move mfgBIOS LKM"
   fi
 
+  if [ "${BRP_JUN_MOD}" -eq 1 ]; then
+    git -C ${BRP_URD_DIR} diff baseline > ${BRP_JUN_PATCH}
+    pushd ${BRP_URD_DIR}
+    # rm .git
+    "${RM_PATH}" -rf .git
+    popd
+  fi
+
   # Finally, we can finish ramdisk modifications with repacking it
   readonly BRP_RD_COMPRESSED=$(brp_json_get_field "${BRP_REL_CONFIG_JSON}" "extra.compress_rd")
 
-  pr_process "Repacking ramdisk to %s" "${BRP_RD_REPACK}"
-  if [ "${BRP_RD_COMPRESSED}" == "true" ]; then
-    brp_pack_zrd "${BRP_RD_REPACK}" "${BRP_URD_DIR}"
-  elif [ "${BRP_RD_COMPRESSED}" == "false" ]; then
-    brp_pack_cpiord "${BRP_RD_REPACK}" "${BRP_URD_DIR}"
+  if [ "${BRP_JUN_MOD}" -eq 1 ]; then
+    cp ${BRP_RD_FILE} ${BRP_RD_REPACK}
   else
-    pr_crit "Invalid value for platform extra.compress_rd (expected bool, got \"%s\")" "${BRP_RD_COMPRESSED}"
+    pr_process "Repacking ramdisk to %s" "${BRP_RD_REPACK}"
+    if [ "${BRP_RD_COMPRESSED}" == "true" ]; then
+      brp_pack_zrd "${BRP_RD_REPACK}" "${BRP_URD_DIR}"
+      # add fake 64byte sign
+      dd if=/dev/zero of=${BRP_RD_REPACK} bs=$((3-(($(stat --format=%s ${BRP_RD_REPACK})+3)&0x03)+64)) count=1 conv=notrunc oflag=append
+    elif [ "${BRP_RD_COMPRESSED}" == "false" ]; then
+      brp_pack_cpiord "${BRP_RD_REPACK}" "${BRP_URD_DIR}"
+    else
+      pr_crit "Invalid value for platform extra.compress_rd (expected bool, got \"%s\")" "${BRP_RD_COMPRESSED}"
+    fi
   fi
   pr_process_ok
 
@@ -384,13 +417,28 @@ if [[ "${BRP_DEV_DISABLE_EXTS}" -ne 1 ]]; then
   pr_process_ok
 fi
 
-pr_process "Packing custom ramdisk layer to %s" "${BRP_CUSTOM_RD_PATH}"
-if [ "${BRP_RD_COMPRESSED}" == "true" ]; then
+if [ "${BRP_JUN_MOD}" -eq 1 ]; then
+  brp_mkdir "${BRP_CUSTOM_DIR}/usr/bin"
+  brp_mkdir "${BRP_CUSTOM_DIR}/etc"
+  "${CP_PATH}" --recursive --dereference "${BRP_COMMON_CFG_BASE}/jun/init" "${BRP_CUSTOM_DIR}/init"
+  "${CP_PATH}" --recursive --dereference "${BRP_COMMON_CFG_BASE}/jun/usr/bin/patch" "${BRP_CUSTOM_DIR}/usr/bin/patch"
+  "${CP_PATH}" --recursive --dereference "${BRP_JUN_PATCH}" "${BRP_CUSTOM_DIR}/etc/jun.patch"
+
+  pr_process "Packing custom ramdisk layer to %s" "${BRP_CUSTOM_RD_PATH}"
   brp_pack_zrd "${BRP_CUSTOM_RD_PATH}" "${BRP_CUSTOM_DIR}"
-elif [ "${BRP_RD_COMPRESSED}" == "false" ]; then
-  brp_pack_cpiord "${BRP_CUSTOM_RD_PATH}" "${BRP_CUSTOM_DIR}"
+  # add fake 64byte sign
+  dd if=/dev/zero of=${BRP_CUSTOM_RD_PATH} bs=$((3-(($(stat --format=%s ${BRP_RD_REPACK})+3)&0x03)+64)) count=1 conv=notrunc oflag=append
 else
-  pr_crit "Invalid value for platform extra.compress_rd (expected bool, got \"%s\")" "${BRP_RD_COMPRESSED}"
+  pr_process "Packing custom ramdisk layer to %s" "${BRP_CUSTOM_RD_PATH}"
+  if [ "${BRP_RD_COMPRESSED}" == "true" ]; then
+    brp_pack_zrd "${BRP_CUSTOM_RD_PATH}" "${BRP_CUSTOM_DIR}"
+    # add fake 64byte sign
+    dd if=/dev/zero of=${BRP_CUSTOM_RD_PATH} bs=$((3-(($(stat --format=%s ${BRP_RD_REPACK})+3)&0x03)+64)) count=1 conv=notrunc oflag=append
+  elif [ "${BRP_RD_COMPRESSED}" == "false" ]; then
+    brp_pack_cpiord "${BRP_CUSTOM_RD_PATH}" "${BRP_CUSTOM_DIR}"
+  else
+    pr_crit "Invalid value for platform extra.compress_rd (expected bool, got \"%s\")" "${BRP_RD_COMPRESSED}"
+  fi
 fi
 pr_process_ok
 

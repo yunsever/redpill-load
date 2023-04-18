@@ -1,0 +1,61 @@
+#
+# Copyright (C) 2022 Ing <https://github.com/wjz304>
+# 
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+
+
+name: buildroot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  buildroot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Initialization environment
+        run : |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          sudo timedatectl set-timezone "Asia/Shanghai"
+
+          sudo apt install -y libelf-dev
+          
+      - name: Make buildroot
+        run : |
+          git clone --single-branch -b 2022.02 https://github.com/buildroot/buildroot.git .buildroot
+          
+          cp -rf buildroot/* .buildroot
+
+          cd .buildroot
+          make syno_defconfig
+          make
+
+      - name: Copy bzImage
+        run : |
+          if [ -f ".buildroot/output/images/bzImage" ]; then
+            echo "Copy bzImage ..."
+            cp -vf .buildroot/output/images/bzImage config/_common
+          fi
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: buildroot
+          path: |
+            .buildroot/output/images
+
+      - name: Check and Push
+        run: |
+          git pull
+          status=$(git status -s | grep -E 'bzImage' | awk '{printf " %s", $2}')
+          if [ -n "${status}" ]; then
+            git add ${status}
+            git commit -m "update $(date +%Y-%m-%d" "%H:%M:%S)"
+            git push -f
+          fi

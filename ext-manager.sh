@@ -33,7 +33,7 @@ readonly RPT_EXTS_DIR=${RPT_EXTS_DIR:-"$PWD/custom/extensions"}
 # Exit: 0 on valid, 1 on validation failure
 mrp_validate_id()
 {
-  if [[ "${1}" =~ ^[A-Za-z]+[A-Za-z0-9._\-]+$ ]]; then
+  if [[ "${1}" =~ ^[A-Za-z]+[A-Za-z0-9._+\-]+$ ]]; then
     pr_dbg "ID \"%s\" is verified as valid" "${1}"
     return 0
   else
@@ -47,6 +47,10 @@ mrp_validate_id()
 # Args: $1 platform ID
 # Exit: 0 on valid, 1 on validation failure
 mrp_validate_platform_id()
+{
+  return 0
+}
+mrp_validate_platform_id_bak()
 {
   if [[ "${1}" =~ ^[a-z0-9_]+$ ]]; then
     pr_dbg "Platform ID \"%s\" is verified as valid" "${1}"
@@ -339,6 +343,43 @@ mrp_fetch_new_ext_index()
 #   0: success
 #   1: error occurred (message will be printed)
 mrp_fetch_new_ext_recipe()
+{
+  pr_dbg "Fetching new recipe for extension %s and platform %s" "${1}" "${2}"
+  if ! mrp_validate_platform_id "${2}"; then 
+    pr_err "Platform ID %s is not valid" "${2}"
+    return 1
+  fi
+  local index_file;
+  index_file=$(mrp_get_existing_index_file "${1}")
+  if [ $? -ne 0 ]; then
+    pr_err "Failed to load index file for extension %s - see errors above for details" "${1}"
+    return 1
+  fi
+  local recipe_url;
+  recipe_url=$(brp_json_get_field "${index_file}" "releases.\"${2}\"" 1)
+  if [[ $? -ne 0 ]] || [[ "${recipe_url}" == "null" ]]; then
+    pr_warn "Failed to get recipe for %s try fallback to "${BRP_PLATFORM_KERNELVERSION}"" "${2}"
+    recipe_url=$(brp_json_get_field "${index_file}" "releases.\"${BRP_PLATFORM_KERNELVERSION}\"" 1)
+    if [[ $? -ne 0 ]] || [[ "${recipe_url}" == "null" ]]; then
+      pr_warn "Failed to get recipe for %s try fallback to "_"" "${2}"
+      recipe_url=$(brp_json_get_field "${index_file}" "releases.\"_\"" 1)
+      if [[ $? -ne 0 ]] || [[ "${recipe_url}" == "null" ]]; then
+        pr_err "The extension %s was found. However, the extension index has no recipe for %s platform. It may not be" "${1}" "${2}"
+        pr_err "supported on that platform, or author did not updated it for that platform yet. You can try running"
+        pr_err ""%s update" to refresh indexes for all extensions manually. Below are the currently known information about" "${MRP_SRC_NAME}"
+        pr_err "the extension stored locally:"
+        mrp_show_ext_info "${1}"
+        return 1
+      fi
+    fi
+  fi
+  local mrp_tmp_rcp="${RPT_EXTS_DIR}/_ext_new_rcp.tmp_json"
+  rm "${mrp_tmp_rcp}" &> /dev/null
+  rpt_download_remote "${recipe_url}" "${mrp_tmp_rcp}" 1
+  brp_json_validate "${mrp_tmp_rcp}" # validate JSON *file*, not its format/semantic
+  echo "${mrp_tmp_rcp}"
+}
+mrp_fetch_new_ext_recipe_bak()
 {
   pr_dbg "Fetching new recipe for extension %s and platform %s" "${1}" "${2}"
 

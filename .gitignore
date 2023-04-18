@@ -6,9 +6,11 @@ images/
 !images/.gitkeep
 /user_config.json
 /user_config*.json
-email.patch
-.idea/
 ext/rp-lkm/
 !ext/rp-lkm/.gitkeep
 custom/
 !custom/.gitkeep
+email.patch
+.idea/
+.vscode/
+__pycache__

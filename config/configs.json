@@ -1,0 +1,1216 @@
+{
+    "DS916+": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS916+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_port_thaw": 1,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DS918+": {
+        "satadom": 2,
+        "synoinfo": {
+            "maxdisks": "16",
+            "internalportcfg": "0xffff",
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_leds_lp3943": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "buzzeroffen": "0xffff",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS918+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_port_thaw": 1,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DS920+": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS920+",
+            "intel_iommu": "igfx_off",
+            "HddEnableDynamicPower": 1,
+            "vender_format_version": 2,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "DS923+": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS923+",
+            "HddEnableDynamicPower": 1,
+            "vender_format_version": 2,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8"
+        },
+        "ramdisk": {
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "DS1019+": {
+        "satadom": 2,
+        "synoinfo": {
+            "internalportcfg": "0xffff",
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_leds_lp3943": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "buzzeroffen": "0xffff",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS1019+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DS1520+": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS1520+",
+            "intel_iommu": "igfx_off",
+            "HddEnableDynamicPower": 1,
+            "vender_format_version": 2,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "DS1621+": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS1621+",
+            "SMBusHddDynamicPower": 1,
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "DS1621xs+": {
+        "satadom": 2,
+        "synoinfo": {
+            "internalportcfg": "0xffff",
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_oob_ctl": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS1621xs+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_port_thaw": 1,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DS2422+": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "supportssdcache": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS2422+",
+            "SMBusHddDynamicPower": 1,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
+            ]
+        }
+    },
+    "DS3615xs": {
+        "satadom": 1,
+        "synoinfo": {
+            "maxdisks": "15",
+            "internalportcfg": "0x78FF",
+            "esataportcfg": "0x0",
+            "usbportcfg": "0x8700",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS3615xs",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DS3617xs": {
+        "satadom": 1,
+        "synoinfo": {
+            "maxdisks": "15",
+            "internalportcfg": "0x78FF",
+            "esataportcfg": "0x0",
+            "usbportcfg": "0x8700",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "supportssdcache": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS3617xs",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DS3622xs+": {
+        "satadom": 1,
+        "synoinfo": {
+            "maxdisks": "24",
+            "internalportcfg": "0xffff",
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_oob_ctl": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DS3622xs+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "DVA1622": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "buzzeroffen": "0xffff",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DVA1622",
+            "intel_iommu": "igfx_off",
+            "HddEnableDynamicPower": 1,
+            "vender_format_version": 2,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "DVA3219": {
+        "satadom": 2,
+        "synoinfo": {
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "supportnvme": "yes",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DVA3219",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "DVA3221": {
+        "satadom": 2,
+        "synoinfo": {
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "supportnvme": "yes",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "DVA3221",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "FS2500": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "FS2500",
+            "intel_iommu": "igfx_off",
+            "HddEnableDynamicPower": 1,
+            "vender_format_version": 2,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "FS6400": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "FS6400",
+            "HddEnableDynamicPower": 1,
+            "vender_format_version": 2,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    },
+    "RS3413xs+": {
+        "satadom": 1,
+        "synoinfo": {
+            "maxdisks": "15",
+            "internalportcfg": "0x78FF",
+            "esataportcfg": "0x0",
+            "usbportcfg": "0x8700",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "RS3413xs+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "RS3618xs": {
+        "satadom": 2,
+        "synoinfo": {
+            "internalportcfg": "0xffff",
+            "esataportcfg": "0x0",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "RS3618xs",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
+            ]
+        }
+    },
+    "RS4021xs+": {
+        "satadom": 2,
+        "synoinfo": {
+            "maxdisks": "24",
+            "internalportcfg": "0xfffff",
+            "esataportcfg": "0x00",
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "SataPortMap": "1",
+            "DiskIdxMap": "0",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "RS4021xs+",
+            "syno_hdd_powerup_seq": 0,
+            "HddHotplug": 0,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.0.1-42218": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports-OLD-name.patch"
+            ],
+            "7.1.0-42661": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-42661.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
+                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
+            ]
+        }
+    },
+    "SA6400": {
+        "satadom": 2,
+        "synoinfo": {
+            "support_disk_compatibility": "",
+            "support_memory_compatibility": "",
+            "support_led_brightness_adjustment": "",
+            "support_bde_internal_10g": "",
+            "support_oob_ctl": "",
+            "support_syno_hybrid_raid": "",
+            "supportraidgroup": "",
+            "rss_server": "http://example.com/null.xml",
+            "rss_server_ssl": "https://example.com/null.xml",
+            "rss_server_v2": "https://example.com/null"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "SA6400",
+            "SMBusHddDynamicPower": 1,
+            "vender_format_version": 2,
+            "sataboot2": null,
+            "scsi_mod.use_blk_mq": 1,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "ramdisk": {
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-sa6400.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
+            "7.2.0-64216": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-sa6400-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ]
+        }
+    }
+}
