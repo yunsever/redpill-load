@@ -1,0 +1,1640 @@
+[
+    {
+        "Model": "FS6400",
+        "CPU Model": "Intel Xeon Silver 4110 x 2",
+        "Cores": "Eight Core x 2",
+        "Threads": "16 x 2",
+        "FPU": "Yes",
+        "PackageArch": "purley",
+        "RAM": "DDR4 ECC RDIMM 32 GB"
+    },
+    {
+        "Model": "FS3600",
+        "CPU Model": "Intel Xeon D-1567",
+        "Cores": "Twelve Core",
+        "Threads": "24",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "FS3410",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnkv2",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "FS3400",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "FS3017",
+        "CPU Model": "Intel Xeon E5-2620 v3 x 2",
+        "Cores": "Six Core x 2",
+        "Threads": "12 x 2",
+        "FPU": "Yes",
+        "PackageArch": "grantley",
+        "RAM": "DDR4 ECC RDIMM 64 GB"
+    },
+    {
+        "Model": "FS2500",
+        "CPU Model": "AMD Ryzen V1780B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "FS2017",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "FS1018",
+        "CPU Model": "Intel Pentium D1508",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC SODIMM 8 GB"
+    },
+    {
+        "Model": "HD6500",
+        "CPU Model": "Intel Xeon Silver 4210R x 2",
+        "Cores": "Ten Core x 2",
+        "Threads": "20 x 2",
+        "FPU": "Yes",
+        "PackageArch": "purley",
+        "RAM": "DDR4 ECC RDIMM 64 GB"
+    },
+    {
+        "Model": "SA6400",
+        "CPU Model": "AMD EPYC 7272",
+        "Cores": "Twelve Core",
+        "Threads": "24",
+        "FPU": "Yes",
+        "PackageArch": "epyc7002",
+        "RAM": "DDR4 ECC RDIMM 32 GB"
+    },
+    {
+        "Model": "SA3610",
+        "CPU Model": "Intel Xeon D-1567",
+        "Cores": "Twelve Core",
+        "Threads": "24",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnkv2",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "SA3600",
+        "CPU Model": "Intel Xeon D-1567",
+        "Cores": "Twelve Core",
+        "Threads": "24",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "SA3410",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnkv2",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "SA3400",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "SA3200D",
+        "CPU Model": "Intel Xeon D-1521 x 2",
+        "Cores": "Quad Core x 2",
+        "Threads": "8 x 2",
+        "FPU": "Yes",
+        "PackageArch": "broadwellntbap",
+        "RAM": "DDR4 ECC UDIMM 8 GB x 2"
+    },
+    {
+        "Model": "RS2423RP+",
+        "CPU Model": "AMD Ryzen V1780B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS2423+",
+        "CPU Model": "AMD Ryzen V1780B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "DS1823xs+",
+        "CPU Model": "AMD Ryzen V1780B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC SODIMM 8 GB"
+    },
+    {
+        "Model": "DS923+",
+        "CPU Model": "AMD Ryzen R1600",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "r1000",
+        "RAM": "DDR4 ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "DS723+",
+        "CPU Model": "AMD Ryzen R1600",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "r1000",
+        "RAM": "DDR4 ECC SODIMM 2 GB"
+    },
+    {
+        "Model": "DS423+",
+        "CPU Model": "Intel Celeron J4125",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 SODIMM 2 GB"
+    },
+    {
+        "Model": "DS423",
+        "CPU Model": "Realtek RTD1619B",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1619b",
+        "RAM": "DDR4 2 GB"
+    },
+    {
+        "Model": "DS223",
+        "CPU Model": "Realtek RTD1619B",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1619b",
+        "RAM": "DDR4 2 GB"
+    },
+    {
+        "Model": "DVA1622",
+        "CPU Model": "Intel Celeron J4125",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 6 GB"
+    },
+    {
+        "Model": "RS822+/RS822RP+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC SODIMM 2 GB"
+    },
+    {
+        "Model": "RS422+",
+        "CPU Model": "AMD Ryzen R1600",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "r1000",
+        "RAM": "DDR4 ECC 2 GB"
+    },
+    {
+        "Model": "DS3622xs+",
+        "CPU Model": "Intel Xeon D-1531",
+        "Cores": "Six Core",
+        "Threads": "12",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC SODIMM 16 GB"
+    },
+    {
+        "Model": "DS2422+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "DS1522+",
+        "CPU Model": "AMD Ryzen R1600",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "r1000",
+        "RAM": "DDR4 ECC SODIMM 8 GB"
+    },
+    {
+        "Model": "RS4021xs+",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC UDIMM 16 GB"
+    },
+    {
+        "Model": "RS3621xs+",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS3621RPxs",
+        "CPU Model": "Intel Xeon D-1531",
+        "Cores": "Six Core",
+        "Threads": "12",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS2821RP+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC UDIMM 4 GB"
+    },
+    {
+        "Model": "RS2421+/RS2421RP+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC UDIMM 4 GB"
+    },
+    {
+        "Model": "RS1221+/RS1221RP+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "DS1821+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "DS1621xs+",
+        "CPU Model": "Intel Xeon D-1527",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 ECC SODIMM 8 GB"
+    },
+    {
+        "Model": "DS1621+",
+        "CPU Model": "AMD Ryzen V1500B",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "v1000",
+        "RAM": "DDR4 ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "DVA3221",
+        "CPU Model": "Intel Atom C3538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "denverton",
+        "RAM": "DDR4 Non-ECC SODIMM 8 GB"
+    },
+    {
+        "Model": "RS820+/RS820RP+",
+        "CPU Model": "Intel Atom C3538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "denverton",
+        "RAM": "DDR4 Non-ECC 2 GB"
+    },
+    {
+        "Model": "DS1520+",
+        "CPU Model": "Intel Celeron J4125",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 8 GB"
+    },
+    {
+        "Model": "DS920+",
+        "CPU Model": "Intel Celeron J4125",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 4 GB"
+    },
+    {
+        "Model": "DS720+",
+        "CPU Model": "Intel Celeron J4125",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 2 GB"
+    },
+    {
+        "Model": "DS620slim",
+        "CPU Model": "Intel Celeron J3355",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "apollolake",
+        "RAM": "DDR3L SODIMM 2 GB"
+    },
+    {
+        "Model": "DS420+",
+        "CPU Model": "Intel Celeron J4025",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 2 GB"
+    },
+    {
+        "Model": "DS420j",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 1 GB"
+    },
+    {
+        "Model": "DS220+",
+        "CPU Model": "Intel Celeron J4025",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "geminilake",
+        "RAM": "DDR4 2 GB"
+    },
+    {
+        "Model": "DS220j",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 512 MB"
+    },
+    {
+        "Model": "DS120j",
+        "CPU Model": "Marvell A3720",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada37xx",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "RS1219+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "RS819",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 2 GB"
+    },
+    {
+        "Model": "DS1019+",
+        "CPU Model": "Intel Celeron J3455",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "apollolake",
+        "RAM": "DDR3L SODIMM 8 GB"
+    },
+    {
+        "Model": "DS419slim",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3L 512 MB"
+    },
+    {
+        "Model": "DS119j",
+        "CPU Model": "Marvell A3720",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada37xx",
+        "RAM": "DDR3L 256 MB"
+    },
+    {
+        "Model": "DVA3219",
+        "CPU Model": "Intel Atom C3538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "denverton",
+        "RAM": "DDR4 Non-ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "RS3618xs",
+        "CPU Model": "Intel Xeon D-1521",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS2818RP+",
+        "CPU Model": "Intel Atom C3538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "denverton",
+        "RAM": "DDR4 Non-ECC UDIMM 4 GB"
+    },
+    {
+        "Model": "RS2418+/RS2418RP+",
+        "CPU Model": "Intel Atom C3538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "denverton",
+        "RAM": "DDR4 Non-ECC UDIMM 4 GB"
+    },
+    {
+        "Model": "RS818+/RS818RP+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2GB"
+    },
+    {
+        "Model": "DS3018xs",
+        "CPU Model": "Intel Pentium D1508",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "broadwellnk",
+        "RAM": "DDR4 SODIMM 8 GB"
+    },
+    {
+        "Model": "DS1618+",
+        "CPU Model": "Intel Atom C3538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "denverton",
+        "RAM": "DDR4 Non-ECC SODIMM 4 GB"
+    },
+    {
+        "Model": "DS918+",
+        "CPU Model": "Intel Celeron J3455",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "apollolake",
+        "RAM": "DDR3L SODIMM 4 GB"
+    },
+    {
+        "Model": "DS718+",
+        "CPU Model": "Intel Celeron J3455",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "apollolake",
+        "RAM": "DDR3L SODIMM 2 GB"
+    },
+    {
+        "Model": "DS418",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 2GB"
+    },
+    {
+        "Model": "DS418play",
+        "CPU Model": "Intel Celeron J3355",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "apollolake",
+        "RAM": "DDR3L SODIMM 2 GB"
+    },
+    {
+        "Model": "DS418j",
+        "CPU Model": "Realtek RTD1293",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 1 GB"
+    },
+    {
+        "Model": "DS218+",
+        "CPU Model": "Intel Celeron J3355",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "apollolake",
+        "RAM": "DDR3L SODIMM 2 GB"
+    },
+    {
+        "Model": "DS218",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 2GB"
+    },
+    {
+        "Model": "DS218play",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 1 GB"
+    },
+    {
+        "Model": "DS218j",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS118",
+        "CPU Model": "Realtek RTD1296",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "rtd1296",
+        "RAM": "DDR4 1 GB"
+    },
+    {
+        "Model": "RS18017xs+",
+        "CPU Model": "Intel Xeon D-1531",
+        "Cores": "Six Core",
+        "Threads": "12",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC RDIMM 16 GB"
+    },
+    {
+        "Model": "RS4017xs+",
+        "CPU Model": "Intel Xeon D-1541",
+        "Cores": "Eight Core",
+        "Threads": "16",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS3617xs+",
+        "CPU Model": "Intel Xeon D-1531",
+        "Cores": "Six Core",
+        "Threads": "12",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS3617RPxs",
+        "CPU Model": "Intel Xeon D-1521",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC UDIMM 8 GB"
+    },
+    {
+        "Model": "RS3617xs",
+        "CPU Model": "Intel Xeon E3-1230 v2",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 4 GB"
+    },
+    {
+        "Model": "RS217",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS3617xsII",
+        "CPU Model": "Intel Xeon D-1527",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC SODIMM 16 GB"
+    },
+    {
+        "Model": "DS3617xs",
+        "CPU Model": "Intel Xeon D-1527",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "broadwell",
+        "RAM": "DDR4 ECC SODIMM 16 GB"
+    },
+    {
+        "Model": "DS1817+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2/8 GB"
+    },
+    {
+        "Model": "DS1817",
+        "CPU Model": "Annapurna Labs Alpine AL-314",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "alpine",
+        "RAM": "DDR3L 4GB"
+    },
+    {
+        "Model": "DS1517+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2/8 GB"
+    },
+    {
+        "Model": "DS1517",
+        "CPU Model": "Annapurna Labs Alpine AL-314",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "alpine",
+        "RAM": "DDR3L 2 GB"
+    },
+    {
+        "Model": "RS18016xs+",
+        "CPU Model": "Intel Xeon E3-1230 v2",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 8 GB"
+    },
+    {
+        "Model": "RS2416+/RS2416RP+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "RS816",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS916+",
+        "CPU Model": "Intel Pentium N3710",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "braswell",
+        "RAM": "DDR3 2 / 8 GB"
+    },
+    {
+        "Model": "DS716+II",
+        "CPU Model": "Intel Celeron N3160",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "braswell",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS716+",
+        "CPU Model": "Intel Celeron N3150",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "braswell",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS416",
+        "CPU Model": "Annapurna Labs Alpine AL-212",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "alpine4k",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS416play",
+        "CPU Model": "Intel Celeron N3060",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "braswell",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS416j",
+        "CPU Model": "Marvell Armada 388 88F6828",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS416slim",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS216+II",
+        "CPU Model": "Intel Celeron N3060",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "braswell",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS216+",
+        "CPU Model": "Intel Celeron N3050",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "braswell",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS216",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS216play",
+        "CPU Model": "STM STiH412",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "monaco",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS216j",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS216se",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS116",
+        "CPU Model": "Marvell Armada 385 88F6820",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada38x",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "RS815+/RS815RP+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "RS815",
+        "CPU Model": "Marvell Armada XP MV78230",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armadaxp",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "RC18015xs+",
+        "CPU Model": "Intel Xeon E3-1230 v2",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 8 GB"
+    },
+    {
+        "Model": "DS3615xs",
+        "CPU Model": "Intel Core i3-4130",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 4 GB"
+    },
+    {
+        "Model": "DS2415+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS2015xs",
+        "CPU Model": "Annapurna Labs Alpine AL-514",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "alpine",
+        "RAM": "DDR3 4 GB"
+    },
+    {
+        "Model": "DS1815+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS1515+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS1515",
+        "CPU Model": "Annapurna Labs Alpine AL-314",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "alpine",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS715",
+        "CPU Model": "Annapurna Labs Alpine AL-314",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "alpine",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS415+",
+        "CPU Model": "Intel Atom C2538",
+        "Cores": "Quad Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "avoton",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS415play",
+        "CPU Model": "Intel Atom CE5335",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "evansport",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS215+",
+        "CPU Model": "Annapurna Labs Alpine AL-212",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "alpine4k",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS215j",
+        "CPU Model": "Marvell Armada 375 88F6720",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada375",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS115",
+        "CPU Model": "Marvell Armada 375 88F6720",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armada375",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS115j",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "RS3614xs+",
+        "CPU Model": "Intel Xeon E3-1230 v2",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 8 GB"
+    },
+    {
+        "Model": "RS3614xs/RS3614RPxs",
+        "CPU Model": "Intel Core i3-4130",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 4 GB"
+    },
+    {
+        "Model": "RS2414+/RS2414RP+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "RS814+/RS814RP+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "RS814",
+        "CPU Model": "Marvell Armada XP MV78230",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armadaxp",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "RS214",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS414",
+        "CPU Model": "Marvell Armada XP MV78230",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armadaxp",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS414j",
+        "CPU Model": "Mindspeed Comcerto C2000",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "comcerto2k",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS414slim",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS214+",
+        "CPU Model": "Marvell Armada XP MV78230",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armadaxp",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS214",
+        "CPU Model": "Marvell Armada XP MV78230",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "armadaxp",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS214play",
+        "CPU Model": "Intel Atom CE5335",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "evansport",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS214se",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS114",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "RS10613xs+",
+        "CPU Model": "Intel Xeon E3-1230 v2",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 8 GB"
+    },
+    {
+        "Model": "RS3413xs+",
+        "CPU Model": "Intel Xeon E3-1230 v2",
+        "Cores": "Quad Core",
+        "Threads": "8",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 8 GB"
+    },
+    {
+        "Model": "DS2413+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS1813+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS1513+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 2 GB"
+    },
+    {
+        "Model": "DS713+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS413",
+        "CPU Model": "Freescale P1022",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "qoriq",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS413j",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS213+",
+        "CPU Model": "Freescale P1022",
+        "Cores": "Dual Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "qoriq",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS213",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS213air",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS213j",
+        "CPU Model": "Marvell Armada 370 88F6707",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "armada370",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "RS3412xs/RS3412RPxs",
+        "CPU Model": "Intel Core i3-2100",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 2 GB"
+    },
+    {
+        "Model": "RS2212+/RS2212RP+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "RS812+/RS812RP+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "RS812",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "RS212",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS3612xs",
+        "CPU Model": "Intel Core i3-2100",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 2 GB"
+    },
+    {
+        "Model": "DS1812+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS1512+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS712+",
+        "CPU Model": "Intel Atom D425",
+        "Cores": "Single Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS412+",
+        "CPU Model": "Intel Atom D2700",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "cedarview",
+        "RAM": "DDR3 1 GB"
+    },
+    {
+        "Model": "DS212+",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS212",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS212j",
+        "CPU Model": "Marvell Kirkwood 88F6281",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 256 MB"
+    },
+    {
+        "Model": "DS112+",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS112",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS112j",
+        "CPU Model": "Marvell Kirkwood 88F6702",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 128 MB"
+    },
+    {
+        "Model": "RS3411xs/RS3411RPxs",
+        "CPU Model": "Intel Core i3-2100",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 2 GB"
+    },
+    {
+        "Model": "RS2211+/RS2211RP+",
+        "CPU Model": "Intel Atom D525",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "RS411",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS3611xs",
+        "CPU Model": "Intel Core i3-2100",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "bromolow",
+        "RAM": "DDR3 ECC 2 GB"
+    },
+    {
+        "Model": "DS2411+",
+        "CPU Model": "Intel Atom D525",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS1511+",
+        "CPU Model": "Intel Atom D525",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS411+II",
+        "CPU Model": "Intel Atom D525",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS411+",
+        "CPU Model": "Intel Atom D510",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS411",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS411j",
+        "CPU Model": "Marvell Kirkwood 88F6281",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 128 MB"
+    },
+    {
+        "Model": "DS411slim",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS211+",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 512 MB"
+    },
+    {
+        "Model": "DS211",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "DS211j",
+        "CPU Model": "Marvell Kirkwood 88F6281",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 128 MB"
+    },
+    {
+        "Model": "DS111",
+        "CPU Model": "Marvell Kirkwood 88F6282",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR3 256 MB"
+    },
+    {
+        "Model": "RS810+/RS810RP+",
+        "CPU Model": "Intel Atom D510",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS1010+",
+        "CPU Model": "Intel Atom D510",
+        "Cores": "Dual Core",
+        "Threads": "4",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS710+",
+        "CPU Model": "Intel Atom D410",
+        "Cores": "Single Core",
+        "Threads": "2",
+        "FPU": "Yes",
+        "PackageArch": "x86",
+        "RAM": "DDR2 1 GB"
+    },
+    {
+        "Model": "DS410",
+        "CPU Model": "Freescale MPC8533E",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "ppc853x",
+        "RAM": "DDR 512 MB"
+    },
+    {
+        "Model": "DS410j",
+        "CPU Model": "Marvell Kirkwood 88F6281",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 128 MB"
+    },
+    {
+        "Model": "DS210+",
+        "CPU Model": "Freescale MPC8533E",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "ppc853x",
+        "RAM": "DDR 512 MB"
+    },
+    {
+        "Model": "DS210j",
+        "CPU Model": "Marvell Kirkwood 88F6281",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 128 MB"
+    },
+    {
+        "Model": "DS110+",
+        "CPU Model": "Freescale MPC8533E",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "Yes",
+        "PackageArch": "ppc853x",
+        "RAM": "DDR 512 MB"
+    },
+    {
+        "Model": "DS110j",
+        "CPU Model": "Marvell Kirkwood 88F6281",
+        "Cores": "Single Core",
+        "Threads": "1",
+        "FPU": "No",
+        "PackageArch": "88f628x",
+        "RAM": "DDR2 128 MB"
+    }
+]
