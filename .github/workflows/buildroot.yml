@@ -31,6 +31,7 @@ jobs:
           git clone --single-branch -b 2022.02 https://github.com/buildroot/buildroot.git .buildroot
           
           cp -rf buildroot/* .buildroot
+          chmod a+x .buildroot/board/syno/rootfs-overlay/root/*
 
           cd .buildroot
           make syno_defconfig
