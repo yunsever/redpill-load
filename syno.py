@@ -43,7 +43,7 @@ def getThisLoads():
     with open(os.path.join(FILE_PATH, 'config/configs.json'), mode="r", encoding='utf-8') as f:
         configs = json.loads(f.read())
     for model in configs.keys():
-        loads[model] = list(configs[model]["ramdisk"].keys())
+        loads[model] = list(configs[model]["platforms"].keys())
     return loads
 
 
@@ -155,7 +155,7 @@ def synoextractor(model, version, isclean = False):
         # print("error")
         return data
 
-    os.makedirs(os.path.join(CACHE_PATH, filepath))
+    os.makedirs(os.path.join(CACHE_PATH, filepath), exist_ok=True)
 
     if isencrypted is True:
         TOOL_PATH = os.path.join(FILE_PATH, 'ext/extractor')
@@ -197,26 +197,60 @@ def synoextractor(model, version, isclean = False):
     
     return data, kver
 
-def makeConfig(model, version, platform, junmode):
+def makeConfig(model, version, junmode):
     config = {}
-
-    synoarch = platform.split('-')[0]
-    synokver = platform.split('-')[1]
     
-    data, kver = synoextractor(model, version)
-
-    if junmode:
-        headstr = 'Yet Another Jun`s Mod x '
-        rootidx = 2
-        linuxkp = '/bzImage'
-    else:
-        headstr = ''
-        rootidx = 1
-        linuxkp = '/zImage'
-
     configs = {}
     with open(os.path.join(FILE_PATH, 'config/configs.json'), mode="r", encoding='utf-8') as f:
         configs = json.loads(f.read())
+
+    data, patkver = synoextractor(model, version)
+
+    cmdline = {
+        "console": "ttyS0,115200n8",
+        "earlyprintk": "",
+        "earlycon": "uart8250,io,0x3f8,115200n8",
+        "root": "/dev/md0",
+        "loglevel": 15,
+        "log_buf_len": "32M"
+    }
+
+    bootp2_copy = {
+        "@@@PAT@@@/GRUB_VER": "GRUB_VER",
+        "@@@COMMON@@@/EFI": "EFI",
+        "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
+        "@@@PAT@@@/rd.gz": "rd.gz",
+        "@@@PAT@@@/zImage": "zImage"
+    }
+
+    cfgkver = configs[model]["platforms"][version].split('-')[1]
+
+    if junmode:
+        headstr = 'Yet Another Jun`s Mod x '
+        bootp2_copy = dict(**{"@@@COMMON@@@/bzImage": "bzImage"}, **bootp2_copy)
+    else:
+        headstr = ''
+        bootp2_copy = dict(**{}, **bootp2_copy)
+
+    def __options(junmode, startup):
+        if junmode:
+            return [
+                    "savedefault",
+                    "set root=(hd0,2)",
+                    "echo Loading Linux...",
+                    "linux /bzImage @@@CMDLINE@@@",
+                    "echo Starting kernel with {} boot".format(startup)
+                ]
+        else:
+            return [
+                    "savedefault",
+                    "set root=(hd0,1)",
+                    "echo Loading Linux...",
+                    "linux /zImage @@@CMDLINE@@@",
+                    "echo Loading initramfs...",
+                    "initrd /rd.gz /custom.gz",
+                    "echo Starting kernel with {} boot".format(startup)
+                ]   
 
     config["os"] = data["os"]
     config["files"] = data["files"]
@@ -227,46 +261,18 @@ def makeConfig(model, version, platform, junmode):
     config["grub"]["base_cmdline"] = configs[model]["base_cmdline"]
     config["grub"]["menu_entries"] = {
             "{}RedPill {} v{} (USB, Verbose)".format(headstr, model, version): {
-                "options": [
-                    "savedefault",
-                    "set root=(hd0,{})".format(rootidx),
-                    "echo Loading Linux...",
-                    "linux {} @@@CMDLINE@@@".format(linuxkp),
-                    "echo Starting kernel with USB boot"
-                ],
-                "cmdline": {
-                    "console": "ttyS0,115200n8",
-                    "earlyprintk": "",
-                    "earlycon": "uart8250,io,0x3f8,115200n8",
-                    "root": "/dev/md0",
-                    "loglevel": 15,
-                    "log_buf_len": "32M"
-                }
+                "options": __options(junmode, 'USB'),
+                "cmdline": cmdline
             },
             "{}RedPill {} v{} (SATA, Verbose)".format(headstr, model, version): {
-                "options": [
-                    "savedefault",
-                    "set root=(hd0,{})".format(rootidx),
-                    "echo Loading Linux...",
-                    "linux {} @@@CMDLINE@@@".format(linuxkp),
-                    "echo Starting kernel with SATA boot",
-                    "echo WARNING: SATA boot support on this platform is experimental!"
-                ],
-                "cmdline": {
-                    "synoboot_satadom": "{}".format(configs[model]["satadom"]),
-                    "console": "ttyS0,115200n8",
-                    "earlyprintk": "",
-                    "earlycon": "uart8250,io,0x3f8,115200n8",
-                    "root": "/dev/md0",
-                    "loglevel": 15,
-                    "log_buf_len": "32M"
-                }
+                "options": __options(junmode, 'SATA'),
+                "cmdline": dict(**{"synoboot_satadom": configs[model]["satadom"]}, **cmdline)
             }
         }
     config["extra"] = {
         "compress_rd": False,
         "ramdisk_copy": {
-            "@@@EXT@@@/rp-lkm/redpill-linux-v{}+.ko".format(synokver): "usr/lib/modules/rp.ko",
+            "@@@EXT@@@/rp-lkm/redpill-linux-v{}+.ko".format(cfgkver): "usr/lib/modules/rp.ko",
             "@@@COMMON@@@/iosched-trampoline.sh": "usr/sbin/modprobe"
         },
         "bootp1_copy": {
@@ -274,34 +280,27 @@ def makeConfig(model, version, platform, junmode):
             "@@@COMMON@@@/EFI/boot/SynoBootLoader.conf": "EFI/BOOT/",
             "@@@COMMON@@@/EFI/boot/SynoBootLoader.efi": "EFI/BOOT/"
         },
-        "bootp2_copy": {
-            "@@@COMMON@@@/bzImage": "bzImage",
-            "@@@PAT@@@/GRUB_VER": "GRUB_VER",
-            "@@@COMMON@@@/EFI": "EFI",
-            "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
-            "@@@PAT@@@/rd.gz": "rd.gz",
-            "@@@PAT@@@/zImage": "zImage"
-        }
+        "bootp2_copy": bootp2_copy
     }
 
     return config
 
 if __name__ == '__main__':
-    if len(sys.argv) != 5:
-        print("eg: syno.py DS920+ 7.1.1-42962 1 geminilake-4.4.180 1")
+    if len(sys.argv) != 4:
+        print("eg: syno.py DS920+ 7.1.1-42962 1")
         exit(1)
     
     model = sys.argv[1]
     version = sys.argv[2]
-    platform = sys.argv[3]
-    junmode = sys.argv[4]
+    junmode = sys.argv[3]
+
     try:
         junmode = bool(int(junmode))
     except ValueError:
         junmode = bool(junmode)
 
-    config = makeConfig(model, version, platform, junmode)
+    config = makeConfig(model, version, junmode)
 
-    os.makedirs(os.path.join(FILE_PATH, model, version))
+    os.makedirs(os.path.join(FILE_PATH, 'config', model, version), exist_ok=True)
     with open(os.path.join(FILE_PATH, 'config', model, version, 'config.json'), 'w', encoding='utf-8') as f:
         f.write(json.dumps(config, indent=4))

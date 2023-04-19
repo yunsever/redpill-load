@@ -41,11 +41,11 @@ jobs:
 
           root = '' # os.path.dirname(os.path.abspath(__file__))
 
-          loads = syno.getThisLoads()
-          if len(loads) > 0:
-              print(json.dumps(loads, indent=4))
-              with open(os.path.join(root, 'config/loads.json'), 'w', encoding='utf-8') as f:
-                  f.write(json.dumps(loads, indent=4))
+          # loads = syno.getThisLoads()
+          # if len(loads) > 0:
+          #     print(json.dumps(loads, indent=4))
+          #     with open(os.path.join(root, 'config/loads.json'), 'w', encoding='utf-8') as f:
+          #         f.write(json.dumps(loads, indent=4))
 
           models = syno.getSynoModels()
           if len(models) > 0:

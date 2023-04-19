@@ -14,7 +14,7 @@ cd "${BASH_SOURCE%/*}/" || exit 1
 ##### CONFIGURATION YOU CAN OVERRIDE USING ENVIRONMENT #################################################################
 BRP_JUN_MOD=${BRP_JUN_MOD:-0} # whether you want to use jun's mod
 BRP_DEBUG=${BRP_DEBUG:-0} # whether you want to see debug messages
-BRP_PLATFORM_KERNELVERSION=${BRP_PLATFORM_KERNELVERSION:-"XXXXXXXX"} # platform + kernel version
+BRP_PLATFORM_KVER=${BRP_PLATFORM_KVER:-"XXXXXXXX"} # platform + kernel version
 BRP_CACHE_DIR=${BRP_CACHE_DIR:-"$PWD/cache"} # cache directory where stuff is downloaded & unpacked
 BRP_USER_CFG=${BRP_USER_CFG:-"$PWD/user_config.json"}
 BRP_BUILD_DIR=${BRP_BUILD_DIR:-''} # makes sure attempts are unique; do not override this unless you're using repack

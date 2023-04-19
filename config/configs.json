@@ -25,6 +25,13 @@
             "syno_hdd_detect": 0,
             "elevator": "elevator"
         },
+        "platforms": {
+            "6.2.4-25556": "braswell-3.10.105",
+            "7.0.1-42218": "braswell-3.10.108",
+            "7.1.0-42661": "braswell-3.10.108",
+            "7.1.1-42962": "braswell-3.10.108",
+            "7.2.0-64216": "braswell-3.10.108"
+        },
         "ramdisk": {
             "6.2.4-25556": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -93,6 +100,13 @@
             "syno_hdd_detect": 0,
             "elevator": "elevator"
         },
+        "platforms": {
+            "6.2.4-25556": "apollolake-4.4.59",
+            "7.0.1-42218": "apollolake-4.4.180",
+            "7.1.0-42661": "apollolake-4.4.180",
+            "7.1.1-42962": "apollolake-4.4.180",
+            "7.2.0-64216": "apollolake-4.4.302"
+        },
         "ramdisk": {
             "6.2.4-25556": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -157,6 +171,12 @@
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
         },
+        "platforms": {
+            "7.0.1-42218": "geminilake-4.4.180",
+            "7.1.0-42661": "geminilake-4.4.180",
+            "7.1.1-42962": "geminilake-4.4.180",
+            "7.2.0-64216": "geminilake-4.4.302"
+        },
         "ramdisk": {
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -209,6 +229,10 @@
             "syno_ttyS0": "serial,0x3f8",
             "syno_ttyS1": "serial,0x2f8"
         },
+        "platforms": {
+            "7.1.1-42962": "r1000-4.4.180",
+            "7.2.0-64216": "r1000-4.4.302"
+        },
         "ramdisk": {
             "7.1.1-42962": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -252,6 +276,13 @@
             "vender_format_version": 2,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "apollolake-4.4.59",
+            "7.0.1-42218": "apollolake-4.4.180",
+            "7.1.0-42661": "apollolake-4.4.180",
+            "7.1.1-42962": "apollolake-4.4.180",
+            "7.2.0-64216": "apollolake-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -318,6 +349,12 @@
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
         },
+        "platforms": {
+            "7.0.1-42218": "geminilake-4.4.180",
+            "7.1.0-42661": "geminilake-4.4.180",
+            "7.1.1-42962": "geminilake-4.4.180",
+            "7.2.0-64216": "geminilake-4.4.302"
+        },
         "ramdisk": {
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -373,6 +410,12 @@
             "syno_ttyS0": "serial,0x3f8",
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
+        },
+        "platforms": {
+            "7.0.1-42218": "v1000-4.4.180",
+            "7.1.0-42661": "v1000-4.4.180",
+            "7.1.1-42962": "v1000-4.4.180",
+            "7.2.0-64216": "v1000-4.4.302"
         },
         "ramdisk": {
             "7.0.1-42218": [
@@ -430,6 +473,13 @@
             "syno_port_thaw": 1,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "broadwellnk-4.4.59",
+            "7.0.1-42218": "broadwellnk-4.4.180",
+            "7.1.0-42661": "broadwellnk-4.4.180",
+            "7.1.1-42962": "broadwellnk-4.4.180",
+            "7.2.0-64216": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -496,6 +546,12 @@
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
         },
+        "platforms": {
+            "7.0.1-42218": "v1000-4.4.180",
+            "7.1.0-42661": "v1000-4.4.180",
+            "7.1.1-42962": "v1000-4.4.180",
+            "7.2.0-64216": "v1000-4.4.302"
+        },
         "ramdisk": {
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -547,6 +603,12 @@
             "vender_format_version": 2,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "bromolow-3.10.105",
+            "7.0.1-42218": "bromolow-3.10.108",
+            "7.1.0-42661": "bromolow-3.10.108",
+            "7.1.1-42962": "bromolow-3.10.108"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -607,6 +669,13 @@
             "vender_format_version": 2,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "broadwell-3.10.105",
+            "7.0.1-42218": "broadwell-4.4.180",
+            "7.1.0-42661": "broadwell-4.4.180",
+            "7.1.1-42962": "broadwell-4.4.180",
+            "7.2.0-64216": "broadwell-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -675,6 +744,12 @@
             "syno_hdd_detect": 0,
             "elevator": "elevator"
         },
+        "platforms": {
+            "7.0.1-42218": "broadwellnk-4.4.180",
+            "7.1.0-42661": "broadwellnk-4.4.180",
+            "7.1.1-42962": "broadwellnk-4.4.180",
+            "7.2.0-64216": "broadwellnk-4.4.302"
+        },
         "ramdisk": {
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -734,6 +809,11 @@
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
         },
+        "platforms": {
+            "7.1.0-42661": "geminilake-4.4.180",
+            "7.1.1-42962": "geminilake-4.4.180",
+            "7.2.0-64216": "geminilake-4.4.302"
+        },
         "ramdisk": {
             "7.1.0-42661": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -782,6 +862,13 @@
             "vender_format_version": 2,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "denverton-4.4.59",
+            "7.0.1-42218": "denverton-4.4.180",
+            "7.1.0-42661": "denverton-4.4.180",
+            "7.1.1-42962": "denverton-4.4.180",
+            "7.2.0-64216": "denverton-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -843,6 +930,13 @@
             "syno_hdd_detect": 0,
             "elevator": "elevator"
         },
+        "platforms": {
+            "6.2.4-25556": "denverton-4.4.59",
+            "7.0.1-42218": "denverton-4.4.180",
+            "7.1.0-42661": "denverton-4.4.180",
+            "7.1.1-42962": "denverton-4.4.180",
+            "7.2.0-64216": "denverton-4.4.302"
+        },
         "ramdisk": {
             "6.2.4-25556": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -902,6 +996,12 @@
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
         },
+        "platforms": {
+            "7.0.1-42218": "v1000-4.4.180",
+            "7.1.0-42661": "v1000-4.4.180",
+            "7.1.1-42962": "v1000-4.4.180",
+            "7.2.0-64216": "v1000-4.4.302"
+        },
         "ramdisk": {
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -952,6 +1052,12 @@
             "syno_ttyS0": "serial,0x3f8",
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
+        },
+        "platforms": {
+            "7.0.1-42218": "purley-4.4.180",
+            "7.1.0-42661": "purley-4.4.180",
+            "7.1.1-42962": "purley-4.4.180",
+            "7.2.0-64216": "purley-4.4.302"
         },
         "ramdisk": {
             "7.0.1-42218": [
@@ -1008,6 +1114,12 @@
             "vender_format_version": 2,
             "elevator": "elevator"
         },
+        "platforms": {
+            "6.2.4-25556": "bromolow-3.10.105",
+            "7.0.1-42218": "bromolow-3.10.108",
+            "7.1.0-42661": "bromolow-3.10.108",
+            "7.1.1-42962": "bromolow-3.10.108"
+        },
         "ramdisk": {
             "6.2.4-25556": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
@@ -1031,13 +1143,6 @@
             ],
             "7.1.1-42962": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
-                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
-                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
-                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
-                "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
-            ],
-            "7.2.0-64216": [
-                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
@@ -1072,6 +1177,13 @@
             "vender_format_version": 2,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "broadwell-3.10.105",
+            "7.0.1-42218": "broadwell-4.4.180",
+            "7.1.0-42661": "broadwell-4.4.180",
+            "7.1.1-42962": "broadwell-4.4.180",
+            "7.2.0-64216": "broadwell-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1131,6 +1243,13 @@
             "vender_format_version": 2,
             "syno_hdd_detect": 0,
             "elevator": "elevator"
+        },
+        "platforms": {
+            "6.2.4-25556": "broadwellnk-4.4.59",
+            "7.0.1-42218": "broadwellnk-4.4.180",
+            "7.1.0-42661": "broadwellnk-4.4.180",
+            "7.1.1-42962": "broadwellnk-4.4.180",
+            "7.2.0-64216": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1197,6 +1316,10 @@
             "syno_ttyS0": "serial,0x3f8",
             "syno_ttyS1": "serial,0x2f8",
             "elevator": "elevator"
+        },
+        "platforms": {
+            "7.1.1-42962": "epyc7002-5.10.55",
+            "7.2.0-64216": "epyc7002-5.10.55"
         },
         "ramdisk": {
             "7.1.1-42962": [

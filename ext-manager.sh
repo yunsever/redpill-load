@@ -358,8 +358,8 @@ mrp_fetch_new_ext_recipe()
   local recipe_url;
   recipe_url=$(brp_json_get_field "${index_file}" "releases.\"${2}\"" 1)
   if [[ $? -ne 0 ]] || [[ "${recipe_url}" == "null" ]]; then
-    pr_warn "Failed to get recipe for %s try fallback to "${BRP_PLATFORM_KERNELVERSION}"" "${2}"
-    recipe_url=$(brp_json_get_field "${index_file}" "releases.\"${BRP_PLATFORM_KERNELVERSION}\"" 1)
+    pr_warn "Failed to get recipe for %s try fallback to "${BRP_PLATFORM_KVER}"" "${2}"
+    recipe_url=$(brp_json_get_field "${index_file}" "releases.\"${BRP_PLATFORM_KVER}\"" 1)
     if [[ $? -ne 0 ]] || [[ "${recipe_url}" == "null" ]]; then
       pr_warn "Failed to get recipe for %s try fallback to "_"" "${2}"
       recipe_url=$(brp_json_get_field "${index_file}" "releases.\"_\"" 1)
