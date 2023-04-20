@@ -1,10 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="/temp1/boot.log"
-rm -tf "${LOG_FILE}" 
-echo "START /root/init.sh" > "${LOG_FILE}"
-
-if grep </proc/cmdline -q "whosyourdaddy"; then
+if grep </proc/cmdline -q "debug"; then
   # TODO add ttyd and lrzsz, first need some nic driver
   echo "Debug mode, you will stay at the first kernel"
   exit 0
@@ -32,8 +28,6 @@ get_synoboot() {
 }
 
 CMDLINE=$(cat /proc/cmdline)
-echo "${CMDLINE}" >> "${LOG_FILE}"
-
 vid=$(for x in $CMDLINE; do
   [[ $x = vid=* ]] || continue
   echo "${x#vid=}" | cut -b 3-6
@@ -51,10 +45,6 @@ dom_szmax=$(for x in $CMDLINE; do
   echo "${x#dom_szmax=}"
 done)
 
-cd "$(dirname "$0")" || exit
-mkdir /temp1
-mkdir /temp2
-
 # found synoboot
 usbfs=$(get_synoboot "$vid" "$pid" "$synoboot_satadom" "$dom_szmax")
 wait_time=30
@@ -64,31 +54,38 @@ while [ "${usbfs}" = "" ] && [ $time_counter -lt $wait_time ]; do
   usbfs=$(get_synoboot "$vid" "$pid" "$synoboot_satadom" "$dom_szmax")
   echo "Still waiting for boot device (waited $((time_counter = time_counter + 1)) of ${wait_time} seconds)"
 done
-echo "usbfs=${usbfs}" >> "${LOG_FILE}"
+echo "usbfs=${usbfs}"
 
-mount "${usbfs}"1 /temp1
-mount "${usbfs}"2 /temp2
+cd "$(dirname "$0")" || exit
+mkdir /p1
+mkdir /p2
 
+mount "${usbfs}"1 /p1
+mount "${usbfs}"2 /p2
+
+echo "patch zImage"
 # patch zImage
-./bzImage-to-vmlinux.sh /temp2/zImage vmlinux >> "${LOG_FILE}" 2>&1
-./kpatch vmlinux vmlinux-mod >"${LOG_FILE}" 2>&1
-rm vmlinux
-./vmlinux-to-bzImage.sh vmlinux-mod zImage-mod >>"${LOG_FILE}" 2>&1
-rm vmlinux-mod
+./bzImage-to-vmlinux.sh /p2/zImage vmlinux
+./kpatch vmlinux vmlinux-mod
+./vmlinux-to-bzImage.sh vmlinux-mod zImage-mod
+rm -f vmlinux vmlinux-mod
 
+echo "patch ramdisk"
 mkdir "ramdisk"
 cd "ramdisk" || exit
-unlzma </temp2/rd.gz | cpio -idmuv
-unlzma </temp1/custom.gz | cpio -idmuv
+unlzma </p2/rd.gz | cpio -idmuv
+unlzma </p1/custom.gz | cpio -idmuv
 # rd.gz + custom.gz
 #find . 2>/dev/null | cpio -o -H newc -R root:root | xz -9 --format=lzma >../rd.gz
 find . 2>/dev/null | cpio -o -H newc -R root:root >../rd.gz
 cd ..
 rm -rf ramdisk
 
-umount /temp1
-umount /temp2
+umount /p1
+umount /p2
 
+echo "kexec dsm"
+echo ${CMDLINE}
 # start
-kexec -d -l ./zImage-mod --initrd=./rd.gz --reuse-cmdline >> "${LOG_FILE}" 2>&1
-kexec -d -e
+kexec -l ./zImage-mod --initrd ./rd.gz --reuse-cmdline
+kexec -e

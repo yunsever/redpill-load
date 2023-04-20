@@ -10,6 +10,11 @@ name: buildroot
 
 on:
   workflow_dispatch:
+    inputs:
+      push: 
+        description: 'push'
+        default: false
+        type: boolean
 
 jobs:
   buildroot:
@@ -36,13 +41,6 @@ jobs:
           cd .buildroot
           make syno_defconfig
           make
-
-      - name: Copy bzImage
-        run : |
-          if [ -f ".buildroot/output/images/bzImage" ]; then
-            echo "Copy bzImage ..."
-            cp -vf .buildroot/output/images/bzImage config/_common
-          fi
       
       - name: Upload artifact
         uses: actions/upload-artifact@v3
@@ -52,11 +50,20 @@ jobs:
             .buildroot/output/images
 
       - name: Check and Push
+        if: success() && inputs.push == true
         run: |
-          git pull
-          status=$(git status -s | grep -E 'bzImage' | awk '{printf " %s", $2}')
-          if [ -n "${status}" ]; then
-            git add ${status}
-            git commit -m "update $(date +%Y-%m-%d" "%H:%M:%S)"
-            git push -f
+          if [ -f ".buildroot/output/images/bzImage" ]; then
+            echo "Copy bzImage ..."
+            cp -vf .buildroot/output/images/bzImage config/_common
+          
+            echo "Git push ..."
+            git pull
+            status=$(git status -s | grep -E 'config/_common/bzImage' | awk '{printf " %s", $2}')
+            if [ -n "${status}" ]; then
+              git add ${status}
+              git commit -m "update $(date +%Y-%m-%d" "%H:%M:%S)"
+              git push -f
+            fi
+          else
+            echo "No change ..."
           fi

@@ -1,0 +1,149 @@
+#
+# Copyright (C) 2022 Ing <https://github.com/wjz304>
+# 
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+
+
+name: grub
+
+on:
+  workflow_dispatch:
+    inputs:
+      push: 
+        description: 'push'
+        default: false
+        type: boolean
+
+jobs:
+  grub:
+    runs-on: ubuntu-latest
+    env: 
+      GRUB: "grub-2.06"
+      BIOS: "i386-pc i386-efi x86_64-efi"
+      SIZE: "128MB 128MB"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Initialization environment
+        run : |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          sudo timedatectl set-timezone "Asia/Shanghai"
+
+          sudo apt install -y build-essential bison flex dosfstools
+          
+      - name: Make Grub
+        run : |
+          curl -#kLO https://ftp.gnu.org/gnu/grub/${{ env.GRUB }}.tar.gz
+          tar zxvf ${{ env.GRUB }}.tar.gz 
+          cd ${{ env.GRUB }}
+
+          for B in ${{ env.BIOS }}
+          do
+            b=${B}
+            b=(${b//-/ })
+            echo "Make ${b[@]} ..."
+
+            mkdir -p ${B}
+            pushd ${B}
+            ../configure --prefix=$PWD/usr -sbindir=$PWD/sbin --sysconfdir=$PWD/etc --disable-werror --target=${b[0]} --with-platform=${b[1]}
+            make
+            make install
+            popd
+          done
+
+
+      - name: Make Image and Install grub
+        run : |
+          # convert KB
+          function convertunit() {
+            v=$(echo $1 | sed 's/[^0-9]*//g')
+            u=$(echo $1 | sed 's/^[0-9]*//g')
+
+            u=$(echo $u | tr '[:lower:]' '[:upper:]')
+            case $u in
+                "KB") echo ${v};;
+                "MB") echo $((${v} * 1024));;
+                "GB") echo $((${v} * 1024 * 1024));;
+                *) echo $v;;
+            esac
+          }
+
+          sum=4096  # 附加 4MB
+          idx=1
+          rm -f fdisk.txt && touch fdisk.txt
+          for S in ${{ env.SIZE }}
+          do
+            s=`convertunit ${S}`
+            sum=$((${sum} + ${s}))
+            echo -e "n\np\n${idx}\n\n+${s}KB\n" >> fdisk.txt
+            ((idx++))
+          done
+          echo -e "n\np\n${idx}\n\n\nw\nq\n" >> fdisk.txt
+
+          rm -f grub.img
+          dd if=/dev/zero of=grub.img bs=1k seek=${sum} count=0
+          fdisk grub.img < fdisk.txt
+          fdisk -l grub.img
+
+          # Install grub
+          LOOPX=`sudo losetup -f`
+          sudo losetup -P ${LOOPX} grub.img
+          sudo mkdosfs -F32 -n RPCB1 ${LOOPX}p1
+          sudo mkfs.ext2 -F -L RPCB2 ${LOOPX}p2
+          for i in $(seq 3 ${idx})
+          do
+            sudo mkfs.ext4 -F -L RPCB${i} ${LOOPX}p${i}
+          done
+
+          rm -rf RPCB1
+          mkdir -p RPCB1
+          sudo mount ${LOOPX}p1 RPCB1
+
+          for B in ${{ env.BIOS }}
+          do
+            args=""
+            args+=" --target=${B} --recheck --boot-directory=RPCB1/boot"
+            if [[ "${B}" == *"efi" ]]; then
+                args+=" --efi-directory=RPCB1 --removable --no-nvram"
+            else
+                args+=" --root-directory=RPCB1"
+            fi
+            args+=" -s --no-bootsector ${LOOPX}"
+
+            sudo ${{ env.GRUB }}/${B}/grub-install ${args}
+          done
+
+          sync
+
+          sudo umount ${LOOPX}p1
+          sudo losetup -d ${LOOPX}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: grub
+          path: |
+            grub.img
+            
+      - name: Check and Push
+        if: success() && inputs.push == true
+        run: |
+          if [ -f "grub.img" ]; then
+            echo "Copy img ..."
+            gzip -c grub.img > ext/boot-image-template.img.gz
+          
+            echo "Git push ..."
+            git pull
+            status=$(git status -s | grep -E 'boot-image-template.img.gz' | awk '{printf " %s", $2}')
+            if [ -n "${status}" ]; then
+              git add ${status}
+              git commit -m "update $(date +%Y-%m-%d" "%H:%M:%S)"
+              git push -f
+            fi
+          else
+            echo "No change ..."
+          fi
