@@ -97,9 +97,17 @@ _load_kmods() {
   echo ":: Loading kernel modules from extensions ... [  OK  ]"
 }
 
+_setMACs() {
+  for ifn in $(ls /sys/class/net/); do
+    [ "${ifn}" = "lo" ] && continue
+    /sbin/ip link set dev ${ifn} address $(cat /sys/class/net/${ifn}/address)
+  done
+}
+
 case $1 in
 load_kmods)
   _load_kmods
+  _setMACs
   ;;
 on_boot_scripts)
   _run_scripts 'on_boot'
