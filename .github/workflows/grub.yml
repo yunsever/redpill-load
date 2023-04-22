@@ -117,6 +117,10 @@ jobs:
             sudo ${{ env.GRUB }}/${B}/grub-install ${args}
           done
 
+          if [ -d RPCB1/boot/grub/fonts -a -f /usr/share/grub/unicode.pf2 ]; then
+            cp /usr/share/grub/unicode.pf2 RPCB1/boot/grub/fonts
+          fi
+
           sync
 
           sudo umount ${LOOPX}p1
