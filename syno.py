@@ -237,19 +237,29 @@ def makeConfig(model, version, junmode):
             return [
                     "savedefault",
                     "set root=(hd0,2)",
+                    "set cmdline=\"@@@CMDLINE@@@\"",
+                    "echo cmdline:",
+                    "echo ${cmdline}",
+                    "echo .",
                     "echo Loading Linux...",
-                    "linux /bzImage @@@CMDLINE@@@",
-                    "echo Starting kernel with {} boot".format(startup)
+                    "linux /bzImage ${cmdline}",
+                    "echo Starting kernel with {} boot".format(startup),
+                    "echo Access http://find.synology.com/ to connect the DSM via web."
                 ]
         else:
             return [
                     "savedefault",
                     "set root=(hd0,1)",
+                    "set cmdline=\"@@@CMDLINE@@@\"",
+                    "echo cmdline:",
+                    "echo ${cmdline}",
+                    "echo .",
                     "echo Loading Linux...",
-                    "linux /zImage @@@CMDLINE@@@",
+                    "linux /zImage ${cmdline}",
                     "echo Loading initramfs...",
                     "initrd /rd.gz /custom.gz",
-                    "echo Starting kernel with {} boot".format(startup)
+                    "echo Starting kernel with {} boot".format(startup),
+                    "echo Access http://find.synology.com/ to connect the DSM via web."
                 ]   
 
     config["os"] = data["os"]
