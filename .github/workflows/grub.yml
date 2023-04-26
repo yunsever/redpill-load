@@ -34,14 +34,18 @@ jobs:
           sudo timedatectl set-timezone "Asia/Shanghai"
 
           sudo apt install -y build-essential bison flex dosfstools
-          
+
+
       - name: Make Grub
         run : |
-          curl -#kLO https://ftp.gnu.org/gnu/grub/${{ env.GRUB }}.tar.gz
-          tar zxvf ${{ env.GRUB }}.tar.gz 
-          cd ${{ env.GRUB }}
+          GRUB="${{ env.GRUB }}"
+          BIOS="${{ env.BIOS }}"
 
-          for B in ${{ env.BIOS }}
+          curl -#kLO https://ftp.gnu.org/gnu/grub/${GRUB}.tar.gz
+          tar zxvf ${GRUB}.tar.gz 
+          pushd ${GRUB}
+
+          for B in ${BIOS}
           do
             b=${B}
             b=(${b//-/ })
@@ -55,9 +59,15 @@ jobs:
             popd
           done
 
+          popd
+
 
       - name: Make Image and Install grub
         run : |
+          GRUB="${{ env.GRUB }}"
+          BIOS="${{ env.BIOS }}"
+          SIZE="${{ env.SIZE }}"
+
           # convert KB
           function convertunit() {
             v=$(echo $1 | sed 's/[^0-9]*//g')
@@ -72,10 +82,10 @@ jobs:
             esac
           }
 
-          sum=4096  # 附加 4MB
+          sum=0
           idx=1
           rm -f fdisk.txt && touch fdisk.txt
-          for S in ${{ env.SIZE }}
+          for S in ${SIZE}
           do
             s=`convertunit ${S}`
             sum=$((${sum} + ${s}))
@@ -85,7 +95,7 @@ jobs:
           echo -e "n\np\n${idx}\n\n\nw\nq\n" >> fdisk.txt
 
           rm -f grub.img
-          dd if=/dev/zero of=grub.img bs=1k seek=${sum} count=0
+          dd if=/dev/zero of=grub.img bs=1k seek=${sum} count=0 conv=sync
           fdisk grub.img < fdisk.txt
           fdisk -l grub.img
 
@@ -99,32 +109,52 @@ jobs:
             sudo mkfs.ext4 -F -L RPCB${i} ${LOOPX}p${i}
           done
 
-          rm -rf RPCB1
-          mkdir -p RPCB1
+          sudo rm -rf RPCB1
+          sudo mkdir -p RPCB1
           sudo mount ${LOOPX}p1 RPCB1
 
-          for B in ${{ env.BIOS }}
+          # 由于使用 fdisk 对映像进行分区, 因此为 msdos 样式的分区表, 并使用 BIOS 引导.
+          # 除了将 stage1/boot.img 放入 MBR 外, 还要将 stage1.5/core.img 嵌入到紧随其后的未分区空间中, 并且必须有空间.
+          # 现在的方法是通过设备映射告诉 grub2 安装程序, 环回设置将如何映射虚拟机中的 BIOS 驱动器.
+          # 例:
+          # mkdir -p /mnt/boot/grub
+          # cat > /mnt/boot/grub/device.map <<EOF
+          # (hd0)   /dev/loop0
+          # (hd0,1) /dev/loop0p1
+          # EOF
+          # 
+          # 或者提取了已有 镜像的头对 grub.img 进行覆盖. 分去并不会破坏头数据. 
+          # 提取头例: head -c 105165 redpill-DS920+_7.1.1-42962_b1681390182.img > grub.bin
+          # 在分区前: dd if=grub.bin of=grub.img conv=notrunc,sync
+
+          sudo mkdir -p RPCB1/EFI
+          sudo mkdir -p RPCB1/boot/grub
+          cat > device.map <<EOF
+          (hd0)   ${LOOPX}
+          EOF
+          sudo mv device.map RPCB1/boot/grub/device.map
+
+          for B in ${BIOS}
           do
             args=""
-            args+=" --target=${B} --recheck --boot-directory=RPCB1/boot"
+            args+=" ${LOOPX} --target=${B} --no-floppy --recheck --grub-mkdevicemap=RPCB1/boot/grub/device.map --boot-directory=RPCB1/boot"
             if [[ "${B}" == *"efi" ]]; then
                 args+=" --efi-directory=RPCB1 --removable --no-nvram"
             else
                 args+=" --root-directory=RPCB1"
             fi
-            args+=" -s --no-bootsector ${LOOPX}"
-
-            sudo ${{ env.GRUB }}/${B}/grub-install ${args}
+            sudo ${GRUB}/${B}/grub-install ${args}
           done
 
           if [ -d RPCB1/boot/grub/fonts -a -f /usr/share/grub/unicode.pf2 ]; then
-            cp /usr/share/grub/unicode.pf2 RPCB1/boot/grub/fonts
+            sudo cp /usr/share/grub/unicode.pf2 RPCB1/boot/grub/fonts
           fi
 
-          sync
+          sudo sync
 
           sudo umount ${LOOPX}p1
           sudo losetup -d ${LOOPX}
+
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
@@ -132,7 +162,8 @@ jobs:
           name: grub
           path: |
             grub.img
-            
+
+
       - name: Check and Push
         if: success() && inputs.push == true
         run: |
