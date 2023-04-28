@@ -124,7 +124,7 @@ jobs:
           # EOF
           # 
           # 或者提取了已有 镜像的头对 grub.img 进行覆盖. 分去并不会破坏头数据. 
-          # 提取头例: head -c 105165 redpill-DS920+_7.1.1-42962_b1681390182.img > grub.bin
+          # 提取头例: head -c 105165 redpill-xxx.img > grub.bin  # 大小 105165 通过 wc -c grub.bin 而来
           # 在分区前: dd if=grub.bin of=grub.img conv=notrunc,sync
 
           sudo mkdir -p RPCB1/EFI
