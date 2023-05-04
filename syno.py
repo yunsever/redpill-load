@@ -8,7 +8,14 @@
 import os, re, sys, json, shutil, hashlib, subprocess, requests
 from bs4 import BeautifulSoup
 
+
 FILE_PATH = os.path.dirname(os.path.abspath(__file__))
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+    'Referer': 'https://archive.synology.com/download/Os/DSM/',
+    'Accept-Language': 'en-US,en;q=0.5'
+}
 
 def __fullversion(ver):
     out = ver
@@ -65,15 +72,18 @@ def getSynoModels():
 
 
 def getSynoPATs():
+    # 临时对策, RC 64551 目前并没有在 archive.synology.com 上线, beta 又为 64216, 临时用 64216 的地址进行替换.
     pats = {}
-    req = requests.get('https://prerelease.synology.cn/webapi/models?event=dsm72_beta')
+    req = requests.get('https://prerelease.synology.com/webapi/models?event=dsm72_beta', headers=headers)
     rels = json.loads(req.text)
     if "models" in rels and len(rels["models"]) > 0:
         for i in rels["models"]:
             if "name" not in i or "dsm" not in i: continue
+            # if i["name"] not in models: continue
             if i["name"] not in pats.keys(): pats[i["name"]]={}
-            pats[i["name"]][__fullversion(i["dsm"]["version"])] = i["dsm"]["url"].split('?')[0]
-    req = requests.get('https://archive.synology.cn/download/Os/DSM')
+            pats[i["name"]][__fullversion(i["dsm"]["version"]).replace('64216','64551')] = i["dsm"]["url"].split('?')[0].replace('beta','release').replace('64216','64551')
+
+    req = requests.get('https://archive.synology.cn/download/Os/DSM', headers=headers)
     req.encoding = 'utf-8'
     bs=BeautifulSoup(req.text, 'html.parser')
     p = re.compile(r"(.*?)-(.*?)", re.MULTILINE | re.DOTALL)
@@ -81,7 +91,7 @@ def getSynoPATs():
     for i in l:
         ver = i.attrs['href'].split('/')[-1]
         if not any([ver.startswith('6.2.4'), ver.startswith('7')]): continue
-        req = requests.get('https://archive.synology.cn{}'.format(i.attrs['href']))
+        req = requests.get('https://archive.synology.cn{}'.format(i.attrs['href']), headers=headers)
         req.encoding = 'utf-8'
         bs=BeautifulSoup(req.text, 'html.parser')
         p = re.compile(r"^(.*?)_(.*?)_(.*?).pat$", re.MULTILINE | re.DOTALL)

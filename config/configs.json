@@ -1,5 +1,5 @@
 {
-    "DS916+": {
+    "#DS916+": {
         "satadom": 2,
         "synoinfo": {
             "support_disk_compatibility": "no",
@@ -173,12 +173,19 @@
             "elevator": "elevator"
         },
         "platforms": {
+            "6.2.4-25556": "geminilake-4.4.59",
             "7.0.1-42218": "geminilake-4.4.180",
             "7.1.0-42661": "geminilake-4.4.180",
             "7.1.1-42962": "geminilake-4.4.180",
             "7.2.0-64551": "geminilake-4.4.302"
         },
         "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
@@ -353,12 +360,19 @@
             "elevator": "elevator"
         },
         "platforms": {
+            "6.2.4-25556": "geminilake-4.4.59",
             "7.0.1-42218": "geminilake-4.4.180",
             "7.1.0-42661": "geminilake-4.4.180",
             "7.1.1-42962": "geminilake-4.4.180",
             "7.2.0-64551": "geminilake-4.4.302"
         },
         "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
@@ -415,12 +429,19 @@
             "elevator": "elevator"
         },
         "platforms": {
+            "6.2.4-25556": "v1000-4.4.59",
             "7.0.1-42218": "v1000-4.4.180",
             "7.1.0-42661": "v1000-4.4.180",
             "7.1.1-42962": "v1000-4.4.180",
             "7.2.0-64551": "v1000-4.4.302"
         },
         "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
@@ -550,12 +571,18 @@
             "elevator": "elevator"
         },
         "platforms": {
+            "6.2.4-25556": "v1000-4.4.59",
             "7.0.1-42218": "v1000-4.4.180",
             "7.1.0-42661": "v1000-4.4.180",
             "7.1.1-42962": "v1000-4.4.180",
             "7.2.0-64551": "v1000-4.4.302"
         },
         "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch"
+            ],
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
@@ -1030,7 +1057,7 @@
             ]
         }
     },
-    "FS6400": {
+    "#FS6400": {
         "satadom": 2,
         "synoinfo": {
             "support_disk_compatibility": "no",
@@ -1057,12 +1084,19 @@
             "elevator": "elevator"
         },
         "platforms": {
+            "6.2.4-25556": "purley-4.4.59",
             "7.0.1-42218": "purley-4.4.180",
             "7.1.0-42661": "purley-4.4.180",
             "7.1.1-42962": "purley-4.4.180",
             "7.2.0-64551": "purley-4.4.302"
         },
         "ramdisk": {
+            "6.2.4-25556": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script-OLD-name.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-LOWER.patch",
+                "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
+            ],
             "7.0.1-42218": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
