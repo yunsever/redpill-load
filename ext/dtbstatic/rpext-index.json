@@ -1,0 +1,14 @@
+{
+  "id": "dtbstatic",
+  "url": "file://localhost@@@PATH@@@/ext/dtbstatic/rpext-index.json",
+  "info": {
+    "name": "Device tree binary",
+    "description": "Create your own device tree binary",
+    "author_url": "https://github.com/jumkey/redpill-load/redpill-dtb",
+    "packer_url": "https://github.com/jumkey/redpill-load/redpill-dtb",
+    "help_url": "https://github.com/jumkey/redpill-load/redpill-dtb"
+  },
+  "releases": {
+    "_": "file://localhost@@@PATH@@@/ext/dtbstatic/recipes/universal.json"
+  }
+}
