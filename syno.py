@@ -53,6 +53,15 @@ def getThisLoads():
         loads[model] = list(configs[model]["platforms"].keys())
     return loads
 
+def getDTmodels(isDT = True):
+    dts = []
+    configs = {}
+    with open(os.path.join(FILE_PATH, 'config/configs.json'), mode="r", encoding='utf-8') as f:
+        configs = json.loads(f.read())
+    for model in configs.keys():
+        if configs[model]["dt"] == isDT:
+            dts.append(model)
+    return dts
 
 def getSynoModels():
     models=[]

@@ -1,6 +1,7 @@
 {
     "#DS916+": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -71,6 +72,7 @@
     },
     "DS918+": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "maxdisks": "16",
             "internalportcfg": "0xffff",
@@ -146,6 +148,7 @@
     },
     "DS920+": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -214,6 +217,7 @@
     },
     "DS923+": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -259,6 +263,7 @@
     },
     "DS1019+": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "internalportcfg": "0xffff",
             "esataportcfg": "0x00",
@@ -333,6 +338,7 @@
     },
     "DS1520+": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -401,6 +407,7 @@
     },
     "DS1621+": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -470,6 +477,7 @@
     },
     "DS1621xs+": {
         "satadom": 1,
+        "dt": false,
         "synoinfo": {
             "internalportcfg": "0xffff",
             "esataportcfg": "0x00",
@@ -544,6 +552,7 @@
     },
     "DS2422+": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -607,6 +616,7 @@
     },
     "DS3615xs": {
         "satadom": 1,
+        "dt": false,
         "synoinfo": {
             "maxdisks": "15",
             "internalportcfg": "0x78FF",
@@ -672,6 +682,7 @@
     },
     "DS3617xs": {
         "satadom": 1,
+        "dt": false,
         "synoinfo": {
             "maxdisks": "15",
             "internalportcfg": "0x78FF",
@@ -746,6 +757,7 @@
     },
     "DS3622xs+": {
         "satadom": 1,
+        "dt": false,
         "synoinfo": {
             "maxdisks": "24",
             "internalportcfg": "0xffff",
@@ -813,6 +825,7 @@
     },
     "DVA1622": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -867,6 +880,7 @@
     },
     "DVA3219": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "esataportcfg": "0x00",
             "support_disk_compatibility": "no",
@@ -934,6 +948,7 @@
     },
     "DVA3221": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "esataportcfg": "0x00",
             "support_disk_compatibility": "no",
@@ -1001,6 +1016,7 @@
     },
     "FS2500": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -1059,6 +1075,7 @@
     },
     "#FS6400": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
@@ -1125,6 +1142,7 @@
     },
     "RS3413xs+": {
         "satadom": 1,
+        "dt": false,
         "synoinfo": {
             "maxdisks": "15",
             "internalportcfg": "0x78FF",
@@ -1189,6 +1207,7 @@
     },
     "RS3618xs": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "internalportcfg": "0xffff",
             "esataportcfg": "0x0",
@@ -1252,6 +1271,7 @@
     },
     "RS4021xs+": {
         "satadom": 2,
+        "dt": false,
         "synoinfo": {
             "maxdisks": "24",
             "internalportcfg": "0xfffff",
@@ -1327,6 +1347,7 @@
     },
     "SA6400": {
         "satadom": 2,
+        "dt": true,
         "synoinfo": {
             "support_disk_compatibility": "no",
             "support_memory_compatibility": "no",
