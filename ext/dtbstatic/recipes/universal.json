@@ -2,25 +2,25 @@
   "files": [
     {
       "name": "install_rd.sh",
-      "url": "file://localhost@@@PATH@@@/ext/dtbstatic/releases/install_rd.sh",
+      "url": "file://localhost@@@PATH@@@/releases/install_rd.sh",
       "sha256": "c85cdd49bb651e749ef73fdeb9fb02da0720a1eaad2a9ac973feeb8cd7c9a44d",
       "packed": false
     },
     {
       "name": "install.sh",
-      "url": "file://localhost@@@PATH@@@/ext/dtbstatic/releases/install.sh",
+      "url": "file://localhost@@@PATH@@@/releases/install.sh",
       "sha256": "7238488712e93ed6599dfbb07abe0e02bacf16f13716fe355e5775f3ab9dae65",
       "packed": false
     },
     {
       "name": "user_model.dtb",
-      "url": "file://localhost@@@PATH@@@/ext/dtbstatic/releases/user_model.dtb",
+      "url": "file://localhost@@@PATH@@@/releases/user_model.dtb",
       "sha256": "@@@HASH@@@",
       "packed": false
     },
     {
       "name": "dtc",
-      "url": "file://localhost@@@PATH@@@/ext/dtbstatic/releases/dtc",
+      "url": "file://localhost@@@PATH@@@/releases/dtc",
       "sha256": "14f7f87a5822050eab7c30a064912a6efe99f49bf6b896bbb38c2ba003803e78",
       "packed": false
     }

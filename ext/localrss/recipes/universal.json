@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "name": "install.sh",
+      "url": "file://localhost@@@PATH@@@/releases/install.sh",
+      "sha256": "@@@HASH@@@",
+      "packed": false
+    },
+    {
+      "name": "sed",
+      "url": "file://localhost@@@PATH@@@/releases/sed",
+      "sha256": "be9c9394fca38bac3412a1a9da1452e4dedb415a168a0329d86a1548df8ced7c",
+      "packed": false
+    }
+  ],
+  "scripts": {
+    "on_boot": "install.sh"
+  }
+}

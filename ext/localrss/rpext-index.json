@@ -1,9 +1,9 @@
 {
-  "id": "dtbstatic",
+  "id": "localrss",
   "url": "file://localhost@@@PATH@@@/rpext-index.json",
   "info": {
-    "name": "Device tree binary",
-    "description": "Create your own device tree binary",
+    "name": "local rss",
+    "description": "local rss",
     "author_url": "https://github.com/wjz304/redpill-load",
     "packer_url": "https://github.com/wjz304/redpill-load",
     "help_url": "https://github.com/wjz304/redpill-load"

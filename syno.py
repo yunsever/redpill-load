@@ -156,6 +156,7 @@ def synoextractor(model, version, isclean = False):
 
     with open(os.path.join(CACHE_PATH, filename), "wb") as f:
         f.write(req.content)
+    filehash = __md5sum(os.path.join(CACHE_PATH, filename))
 
     # Get the first two bytes of the file and extract the third byte
     output = subprocess.check_output(["od", "-bcN2", os.path.join(CACHE_PATH, filename)])
@@ -199,7 +200,7 @@ def synoextractor(model, version, isclean = False):
 
 
     if os.path.exists(os.path.join(CACHE_PATH, filename)): 
-        data["os"] = { "id": "{}_{}".format(synomodel, synoversion), "pat_url": url, "sha256": __sha256sum(os.path.join(CACHE_PATH, filename))}
+        data["os"] = { "id": "{}_{}".format(synomodel, synoversion), "pat_url": url, "sha256": __sha256sum(os.path.join(CACHE_PATH, filename)), "hash": filehash }
         data["files"] = {"vmlinux": {"sha256": ""}}
         if os.path.exists(os.path.join(CACHE_PATH, filepath, "rd.gz")): 
             data["files"]["ramdisk"] = {"name": "rd.gz", "sha256": __sha256sum(os.path.join(CACHE_PATH, filepath, "rd.gz"))}

@@ -8,10 +8,7 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -77,10 +74,7 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -122,10 +116,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -198,10 +189,7 @@
             "support_leds_lp3943": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -270,10 +258,7 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -339,10 +324,7 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -388,10 +370,7 @@
             "support_leds_lp3943": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -460,10 +439,7 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -528,10 +504,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -602,10 +575,7 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -674,10 +644,7 @@
             "support_led_brightness_adjustment": "no",
             "supportssdcache": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -741,10 +708,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -808,10 +772,7 @@
             "support_led_brightness_adjustment": "no",
             "supportssdcache": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -883,10 +844,7 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -947,10 +905,7 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "buzzeroffen": "0xffff"
         },
         "base_cmdline": {
             "sn": "",
@@ -1004,10 +959,7 @@
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "supportnvme": "yes",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportnvme": "yes"
         },
         "base_cmdline": {
             "sn": "",
@@ -1072,10 +1024,7 @@
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "supportnvme": "yes",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportnvme": "yes"
         },
         "base_cmdline": {
             "sn": "",
@@ -1137,10 +1086,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1196,10 +1142,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1263,10 +1206,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1333,10 +1273,7 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1407,10 +1344,7 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1471,10 +1405,7 @@
             "support_led_brightness_adjustment": "no",
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1536,10 +1467,7 @@
             "support_led_brightness_adjustment": "no",
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1613,10 +1541,7 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1688,10 +1613,7 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
@@ -1760,10 +1682,7 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no",
-            "rss_server": "http://example.com/null.xml",
-            "rss_server_ssl": "https://example.com/null.xml",
-            "rss_server_v2": "https://example.com/null"
+            "supportraidgroup": "no"
         },
         "base_cmdline": {
             "sn": "",
