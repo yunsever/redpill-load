@@ -30,7 +30,7 @@
             "7.0.1-42218": "geminilake-4.4.180",
             "7.1.0-42661": "geminilake-4.4.180",
             "7.1.1-42962": "geminilake-4.4.180",
-            "7.2.0-64551": "geminilake-4.4.302"
+            "7.2.0-64561": "geminilake-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -57,7 +57,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -91,7 +91,7 @@
         },
         "platforms": {
             "7.1.1-42962": "r1000-4.4.180",
-            "7.2.0-64551": "r1000-4.4.302"
+            "7.2.0-64561": "r1000-4.4.302"
         },
         "ramdisk": {
             "7.1.1-42962": [
@@ -100,7 +100,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -137,7 +137,7 @@
             "7.0.1-42218": "braswell-3.10.108",
             "7.1.0-42661": "braswell-3.10.108",
             "7.1.1-42962": "braswell-3.10.108",
-            "7.2.0-64551": "braswell-3.10.108"
+            "7.2.0-64561": "braswell-3.10.108"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -167,7 +167,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -210,7 +210,7 @@
             "7.0.1-42218": "apollolake-4.4.180",
             "7.1.0-42661": "apollolake-4.4.180",
             "7.1.1-42962": "apollolake-4.4.180",
-            "7.2.0-64551": "apollolake-4.4.302"
+            "7.2.0-64561": "apollolake-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -240,7 +240,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -280,7 +280,7 @@
             "7.0.1-42218": "geminilake-4.4.180",
             "7.1.0-42661": "geminilake-4.4.180",
             "7.1.1-42962": "geminilake-4.4.180",
-            "7.2.0-64551": "geminilake-4.4.302"
+            "7.2.0-64561": "geminilake-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -307,7 +307,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -341,7 +341,7 @@
         },
         "platforms": {
             "7.1.1-42962": "r1000-4.4.180",
-            "7.2.0-64551": "r1000-4.4.302"
+            "7.2.0-64561": "r1000-4.4.302"
         },
         "ramdisk": {
             "7.1.1-42962": [
@@ -350,7 +350,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -390,7 +390,7 @@
             "7.0.1-42218": "apollolake-4.4.180",
             "7.1.0-42661": "apollolake-4.4.180",
             "7.1.1-42962": "apollolake-4.4.180",
-            "7.2.0-64551": "apollolake-4.4.302"
+            "7.2.0-64561": "apollolake-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -421,7 +421,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -461,7 +461,7 @@
             "7.0.1-42218": "geminilake-4.4.180",
             "7.1.0-42661": "geminilake-4.4.180",
             "7.1.1-42962": "geminilake-4.4.180",
-            "7.2.0-64551": "geminilake-4.4.302"
+            "7.2.0-64561": "geminilake-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -488,7 +488,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -528,7 +528,7 @@
             "7.0.1-42218": "v1000-4.4.180",
             "7.1.0-42661": "v1000-4.4.180",
             "7.1.1-42962": "v1000-4.4.180",
-            "7.2.0-64551": "v1000-4.4.302"
+            "7.2.0-64561": "v1000-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -555,7 +555,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -596,7 +596,7 @@
             "7.0.1-42218": "broadwellnk-4.4.180",
             "7.1.0-42661": "broadwellnk-4.4.180",
             "7.1.1-42962": "broadwellnk-4.4.180",
-            "7.2.0-64551": "broadwellnk-4.4.302"
+            "7.2.0-64561": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -626,7 +626,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -666,7 +666,7 @@
             "7.0.1-42218": "v1000-4.4.180",
             "7.1.0-42661": "v1000-4.4.180",
             "7.1.1-42962": "v1000-4.4.180",
-            "7.2.0-64551": "v1000-4.4.302"
+            "7.2.0-64561": "v1000-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -689,7 +689,7 @@
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
@@ -792,7 +792,7 @@
             "7.0.1-42218": "broadwell-4.4.180",
             "7.1.0-42661": "broadwell-4.4.180",
             "7.1.1-42962": "broadwell-4.4.180",
-            "7.2.0-64551": "broadwell-4.4.302"
+            "7.2.0-64561": "broadwell-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -822,7 +822,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -863,7 +863,7 @@
             "7.0.1-42218": "broadwellnk-4.4.180",
             "7.1.0-42661": "broadwellnk-4.4.180",
             "7.1.1-42962": "broadwellnk-4.4.180",
-            "7.2.0-64551": "broadwellnk-4.4.302"
+            "7.2.0-64561": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "7.0.1-42218": [
@@ -887,7 +887,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -925,7 +925,7 @@
         "platforms": {
             "7.1.0-42661": "geminilake-4.4.180",
             "7.1.1-42962": "geminilake-4.4.180",
-            "7.2.0-64551": "geminilake-4.4.302"
+            "7.2.0-64561": "geminilake-4.4.302"
         },
         "ramdisk": {
             "7.1.0-42661": [
@@ -940,7 +940,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -979,7 +979,7 @@
             "7.0.1-42218": "denverton-4.4.180",
             "7.1.0-42661": "denverton-4.4.180",
             "7.1.1-42962": "denverton-4.4.180",
-            "7.2.0-64551": "denverton-4.4.302"
+            "7.2.0-64561": "denverton-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1005,7 +1005,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1044,7 +1044,7 @@
             "7.0.1-42218": "denverton-4.4.180",
             "7.1.0-42661": "denverton-4.4.180",
             "7.1.1-42962": "denverton-4.4.180",
-            "7.2.0-64551": "denverton-4.4.302"
+            "7.2.0-64561": "denverton-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1070,7 +1070,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1107,7 +1107,7 @@
             "7.0.1-42218": "v1000-4.4.180",
             "7.1.0-42661": "v1000-4.4.180",
             "7.1.1-42962": "v1000-4.4.180",
-            "7.2.0-64551": "v1000-4.4.302"
+            "7.2.0-64561": "v1000-4.4.302"
         },
         "ramdisk": {
             "7.0.1-42218": [
@@ -1126,7 +1126,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1163,7 +1163,7 @@
             "7.0.1-42218": "purley-4.4.180",
             "7.1.0-42661": "purley-4.4.180",
             "7.1.1-42962": "purley-4.4.180",
-            "7.2.0-64551": "purley-4.4.302"
+            "7.2.0-64561": "purley-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1190,7 +1190,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1228,7 +1228,7 @@
             "7.0.1-42218": "v1000-4.4.180",
             "7.1.0-42661": "v1000-4.4.180",
             "7.1.1-42962": "v1000-4.4.180",
-            "7.2.0-64551": "v1000-4.4.302"
+            "7.2.0-64561": "v1000-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1252,7 +1252,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1293,7 +1293,7 @@
             "7.0.1-42218": "broadwellnk-4.4.180",
             "7.1.0-42661": "broadwellnk-4.4.180",
             "7.1.1-42962": "broadwellnk-4.4.180",
-            "7.2.0-64551": "broadwellnk-4.4.302"
+            "7.2.0-64561": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1323,7 +1323,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1425,7 +1425,7 @@
             "7.0.1-42218": "broadwell-4.4.180",
             "7.1.0-42661": "broadwell-4.4.180",
             "7.1.1-42962": "broadwell-4.4.180",
-            "7.2.0-64551": "broadwell-4.4.302"
+            "7.2.0-64561": "broadwell-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1448,7 +1448,7 @@
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
@@ -1489,7 +1489,7 @@
             "7.0.1-42218": "broadwellnk-4.4.180",
             "7.1.0-42661": "broadwellnk-4.4.180",
             "7.1.1-42962": "broadwellnk-4.4.180",
-            "7.2.0-64551": "broadwellnk-4.4.302"
+            "7.2.0-64561": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1519,7 +1519,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1561,7 +1561,7 @@
             "7.0.1-42218": "broadwellnk-4.4.180",
             "7.1.0-42661": "broadwellnk-4.4.180",
             "7.1.1-42962": "broadwellnk-4.4.180",
-            "7.2.0-64551": "broadwellnk-4.4.302"
+            "7.2.0-64561": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1591,7 +1591,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1633,7 +1633,7 @@
             "7.0.1-42218": "broadwellnk-4.4.180",
             "7.1.0-42661": "broadwellnk-4.4.180",
             "7.1.1-42962": "broadwellnk-4.4.180",
-            "7.2.0-64551": "broadwellnk-4.4.302"
+            "7.2.0-64561": "broadwellnk-4.4.302"
         },
         "ramdisk": {
             "6.2.4-25556": [
@@ -1663,7 +1663,7 @@
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch",
                 "@@@COMMON@@@/patch/ramdisk-005-disable-disabled-ports.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
@@ -1701,7 +1701,7 @@
         },
         "platforms": {
             "7.1.1-42962": "epyc7002-5.10.55",
-            "7.2.0-64551": "epyc7002-5.10.55"
+            "7.2.0-64561": "epyc7002-5.10.55"
         },
         "ramdisk": {
             "7.1.1-42962": [
@@ -1710,7 +1710,7 @@
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
                 "@@@COMMON@@@/patch/ramdisk-004-network-hosts.patch"
             ],
-            "7.2.0-64551": [
+            "7.2.0-64561": [
                 "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-002-init-script-sa6400-64216.patch",
                 "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch",
