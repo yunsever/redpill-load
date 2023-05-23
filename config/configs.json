@@ -8,7 +8,9 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -74,7 +76,9 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -116,7 +120,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -189,7 +195,9 @@
             "support_leds_lp3943": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -258,7 +266,9 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -324,7 +334,9 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -370,7 +382,9 @@
             "support_leds_lp3943": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -439,7 +453,9 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -504,7 +520,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -575,7 +593,9 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -644,7 +664,9 @@
             "support_led_brightness_adjustment": "no",
             "supportssdcache": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -708,7 +730,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -772,7 +796,9 @@
             "support_led_brightness_adjustment": "no",
             "supportssdcache": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -844,7 +870,9 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -905,7 +933,9 @@
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "buzzeroffen": "0xffff"
+            "buzzeroffen": "0xffff",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -959,7 +989,9 @@
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "supportnvme": "yes"
+            "supportnvme": "yes",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1024,7 +1056,9 @@
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
             "supportraidgroup": "no",
-            "supportnvme": "yes"
+            "supportnvme": "yes",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1086,7 +1120,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1142,7 +1178,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1206,7 +1244,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1273,7 +1313,9 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1344,7 +1386,9 @@
             "support_memory_compatibility": "no",
             "support_led_brightness_adjustment": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1405,7 +1449,9 @@
             "support_led_brightness_adjustment": "no",
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1467,7 +1513,9 @@
             "support_led_brightness_adjustment": "no",
             "support_bde_internal_10g": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1541,7 +1589,9 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1613,7 +1663,9 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
@@ -1682,7 +1734,9 @@
             "support_bde_internal_10g": "no",
             "support_oob_ctl": "no",
             "support_syno_hybrid_raid": "no",
-            "supportraidgroup": "no"
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
         },
         "base_cmdline": {
             "sn": "",
