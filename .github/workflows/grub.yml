@@ -92,7 +92,7 @@ jobs:
             echo -e "n\np\n${idx}\n\n+${s}KB\n" >> fdisk.txt
             ((idx++))
           done
-          echo -e "n\np\n${idx}\n\n\nw\nq\n" >> fdisk.txt
+          echo -e "n\np\n${idx}\n\n\na\n1\nw\nq\n" >> fdisk.txt
 
           rm -f grub.img
           dd if=/dev/zero of=grub.img bs=1k seek=${sum} count=0 conv=sync
