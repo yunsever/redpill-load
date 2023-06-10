@@ -655,6 +655,51 @@
             ]
         }
     },
+    "DS1823xs+": {
+        "satadom": 2,
+        "dt": true,
+        "synoinfo": {
+            "support_disk_compatibility": "no",
+            "support_memory_compatibility": "no",
+            "support_led_brightness_adjustment": "no",
+            "supportssdcache": "no",
+            "support_syno_hybrid_raid": "no",
+            "supportraidgroup": "no",
+            "maxlanport": "8",
+            "netif_seq": "0 1 2 3 4 5 6 7"
+        },
+        "base_cmdline": {
+            "sn": "",
+            "vid": "0x46f4",
+            "pid": "0x0001",
+            "mac1": "",
+            "netif_num": 1,
+            "syno_hw_version": "1823xs+",
+            "SMBusHddDynamicPower": 1,
+            "vender_format_version": 2,
+            "syno_hdd_detect": 0,
+            "synoboot2": null,
+            "syno_ttyS0": "serial,0x3f8",
+            "syno_ttyS1": "serial,0x2f8",
+            "elevator": "elevator"
+        },
+        "platforms": {
+            "7.1.1-42962": "v1000-4.4.180",
+            "7.2.0-64570": "v1000-4.4.302"
+        },
+        "ramdisk": {
+            "7.1.1-42962": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
+            ],
+            "7.2.0-64570": [
+                "@@@COMMON@@@/patch/ramdisk-001-disable-root-pwd-64216.patch",
+                "@@@COMMON@@@/patch/ramdisk-002-init-script.patch",
+                "@@@COMMON@@@/patch/ramdisk-003-post-init-script-noatime.patch"
+            ]
+        }
+    },
     "DS2422+": {
         "satadom": 2,
         "dt": true,
