@@ -88,4 +88,4 @@ echo "kexec dsm"
 echo ${CMDLINE}
 # start
 kexec -l ./zImage-mod --initrd ./rd.gz --reuse-cmdline
-kexec -e
+kexec -f -e
